@@ -1,0 +1,16 @@
+# Vercel
+.vercel
+
+# secrete — nu comite niciodată un token
+.git-token
+*.env
+.env*
+
+# gunoi de sistem
+Thumbs.db
+desktop.ini
+.DS_Store
+
+# unelte
+node_modules/
+*.log

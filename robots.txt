@@ -1,0 +1,5 @@
+User-agent: *
+Allow: /
+
+# Fișiere care nu au ce căuta în indexul de căutare.
+Disallow: /index.standalone.html

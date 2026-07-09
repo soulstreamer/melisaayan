@@ -1,0 +1,10 @@
+# Nu urcăm pe CDN ce nu servește pagina.
+
+# varianta cu tot inline (2,3 MB) — utilă local, inutilă pe server
+index.standalone.html
+
+# sigla originală, netăiată; pagina folosește assets/logo.png
+logo.png
+
+# documentația internă (menționează că datele firmei sunt fictive)
+README.md
