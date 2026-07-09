@@ -1,10 +1,12 @@
 # Nu urcăm pe CDN ce nu servește pagina.
+# Atenție: regulile sunt de tip .gitignore — fără "/" la început,
+# "logo.png" ar exclude și assets/logo.png. Le ancorăm la rădăcină.
 
-# varianta cu tot inline (2,3 MB) — utilă local, inutilă pe server
-index.standalone.html
+# varianta cu tot inline (2,4 MB) — utilă local, inutilă pe server
+/index.standalone.html
 
 # sigla originală, netăiată; pagina folosește assets/logo.png
-logo.png
+/logo.png
 
 # documentația internă (menționează că datele firmei sunt fictive)
-README.md
+/README.md
