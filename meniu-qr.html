@@ -618,6 +618,12 @@ main, .foot { position: relative; z-index: 2; }
 }
 .chip:hover { color: var(--ink); border-color: var(--ink-3); }
 .chip[aria-pressed="true"] { background: var(--ink); color: var(--bg); border-color: var(--ink); }
+.chip[data-cat="happy-hour"] {
+  border-color: var(--ember); color: var(--accent-ink); font-weight: 700;
+  background: color-mix(in srgb, var(--ember) 16%, transparent);
+}
+.chip[data-cat="happy-hour"]:hover { border-color: var(--ember-hi); }
+.chip[data-cat="happy-hour"][aria-pressed="true"] { background: var(--ember); color: #1a1206; border-color: var(--ember); }
 .chip__n { font-family: var(--font-mono); font-size: 11px; opacity: .55; margin-left: .35rem; }
 
 .count { font-family: var(--font-mono); font-size: var(--t-xs); letter-spacing: .12em; text-transform: uppercase; color: var(--ink-3); }

@@ -627,6 +627,12 @@ main, .foot { position: relative; z-index: 2; }
 }
 .chip:hover { color: var(--ink); border-color: var(--ink-3); }
 .chip[aria-pressed="true"] { background: var(--ink); color: var(--bg); border-color: var(--ink); }
+.chip[data-cat="happy-hour"] {
+  border-color: var(--ember); color: var(--accent-ink); font-weight: 700;
+  background: color-mix(in srgb, var(--ember) 16%, transparent);
+}
+.chip[data-cat="happy-hour"]:hover { border-color: var(--ember-hi); }
+.chip[data-cat="happy-hour"][aria-pressed="true"] { background: var(--ember); color: #1a1206; border-color: var(--ember); }
 .chip__n { font-family: var(--font-mono); font-size: 11px; opacity: .55; margin-left: .35rem; }
 
 .count { font-family: var(--font-mono); font-size: var(--t-xs); letter-spacing: .12em; text-transform: uppercase; color: var(--ink-3); }
@@ -1543,7 +1549,6 @@ dialog::backdrop { background: rgba(8,11,11,.6); backdrop-filter: blur(3px); }
         <p class="hero__sub">Turnăm și servim la tejghea deschisă — și îți spunem exact câte calorii pui pe bon.</p>
         <div class="hero__cta">
           <a class="btn btn--ember" href="#meniu">Vezi meniul</a>
-          <a class="btn btn--onnight" href="#happyhour"><span class="ico-slot" data-ico="zambet"></span>Happy Hour</a>
           <a class="btn btn--onnight" href="#rezervare">Rezervă o masă</a>
         </div>
       </div>
@@ -1670,6 +1675,9 @@ dialog::backdrop { background: rgba(8,11,11,.6); backdrop-filter: blur(3px); }
             <li><span>Cappuccino + Energizant Hell · 18+</span><span class="hh__prices"><b>12 lei</b></span></li>
             <li><span>Cappuccino + Limonadă Naturală</span><span class="hh__prices"><b>17 lei</b></span></li>
           </ul>
+          <a class="btn btn--ember" href="#meniu" id="hhOrderBtn" style="margin-top:1rem">
+            <span class="ico-slot" data-ico="zambet"></span>Comandă Happy Hour
+          </a>
         </article>
 
         <article class="hh__card reveal" data-slot="activ">
@@ -1693,9 +1701,6 @@ dialog::backdrop { background: rgba(8,11,11,.6); backdrop-filter: blur(3px); }
 
       </div>
       <p class="hh__note">Ofertele de mai sus se aplică doar în intervalul 08:00–12:00, celor eligibili conform regulilor din primul card. Nu se cumulează între ele.</p>
-      <a class="btn btn--ember" href="#meniu" id="hhOrderBtn" style="margin-top:1.2rem">
-        <span class="ico-slot" data-ico="zambet"></span>Comandă Happy Hour
-      </a>
     </div>
   </section>
 
