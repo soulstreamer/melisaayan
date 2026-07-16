@@ -1,0 +1,685 @@
+{
+    "restaurant": "La Melania și Ayan",
+    "happy_hour": {
+        "program": "08:00 - 12:00",
+        "reguli_aplicare": [
+            "Persoanelor afiliate în programul de fidelizare La Melania și Ayan",
+            "Elevilor / studenților care fac dovada prin carnetul de elev/student (minim +16 ani)",
+            "Pensionarilor",
+            "Angajaților din saloanele de înfrumusețare"
+        ],
+        "pachete": [
+            {
+                "nume": "Espresso + Apă Plată/Minerală",
+                "cantitate_bautura_secundara": "0.5L",
+                "pret_pachet_lei": 9.0
+            },
+            {
+                "nume": "Espresso + Coca-Cola / Fanta / Sprite",
+                "ambalaj_bautura_secundara": "Doză",
+                "pret_pachet_lei": 12.0
+            },
+            {
+                "nume": "Espresso + Energizant Hell",
+                "pret_pachet_lei": 10.0,
+                "observatii": "Doar persoanelor +18 ani"
+            },
+            {
+                "nume": "Espresso + Limonadă Naturală",
+                "pret_pachet_lei": 15.0
+            },
+            {
+                "nume": "Cappuccino + Apă Plată / Minerală",
+                "cantitate_bautura_secundara": "0.5L",
+                "pret_pachet_lei": 11.0
+            },
+            {
+                "nume": "Cappuccino + Coca-Cola / Fanta / Sprite",
+                "ambalaj_bautura_secundara": "Doză",
+                "pret_pachet_lei": 14.0,
+                "nota": "Corectat din scanarea ocr '1hlei' conform logicii de pachet (+2 lei față de pachetul cu Espresso)"
+            },
+            {
+                "nume": "Cappuccino + Energizant Hell",
+                "pret_pachet_lei": 12.0,
+                "observatii": "Doar persoanelor +18 ani"
+            },
+            {
+                "nume": "Cappuccino + Limonadă Naturală",
+                "pret_pachet_lei": 17.0,
+                "nota": "Corectat din scanarea ocr 'Itlei'"
+            }
+        ],
+        "optionale": [
+            {
+                "nume": "Lapte UHT pentru cafea",
+                "pret_lei": 1.0
+            },
+            {
+                "nume": "Lapte condensat pentru cafea",
+                "pret_lei": 1.0
+            },
+            {
+                "nume": "Sirop Vanilie / Caramel / Ciocolată",
+                "pret_lei": 2.0
+            }
+        ]
+    },
+    "categorii": [
+        {
+            "nume": "Cafea ~ Ceai",
+            "produse": [
+                {
+                    "nume": "Espresso Scurt",
+                    "cantitate": "80ml",
+                    "pret_normal_lei": 10.0,
+                    "pret_redus_lei": 5.0
+                },
+                {
+                    "nume": "Espresso Lung",
+                    "cantitate": "180ml",
+                    "pret_normal_lei": 10.0,
+                    "pret_redus_lei": 5.0
+                },
+                {
+                    "nume": "Espresso Macchiatto",
+                    "cantitate": "90ml",
+                    "pret_normal_lei": 12.0,
+                    "pret_redus_lei": 6.0
+                },
+                {
+                    "nume": "Espresso cu Lapte",
+                    "cantitate": "200ml",
+                    "pret_normal_lei": 12.0,
+                    "pret_redus_lei": 6.0
+                },
+                {
+                    "nume": "Cappuccino",
+                    "cantitate": "240ml",
+                    "pret_normal_lei": 14.0,
+                    "pret_redus_lei": 7.0
+                },
+                {
+                    "nume": "Irish Cappuccino",
+                    "cantitate": "180ml",
+                    "pret_normal_lei": 14.0,
+                    "pret_redus_lei": 7.0
+                },
+                {
+                    "nume": "Ceai Fructe",
+                    "cantitate": "200ml",
+                    "pret_normal_lei": 10.0,
+                    "pret_redus_lei": 5.0
+                }
+            ],
+            "optionale": [
+                {
+                    "nume": "Lapte condensat pentru cafea",
+                    "pret_normal_lei": 2.0,
+                    "pret_redus_lei": 1.0
+                },
+                {
+                    "nume": "Lapte UHT pentru cafea",
+                    "pret_normal_lei": 2.0,
+                    "pret_redus_lei": 1.0
+                },
+                {
+                    "nume": "Sirop Vanilie / Caramel / Ciocolată",
+                    "pret_normal_lei": 4.0,
+                    "pret_redus_lei": 2.0
+                },
+                {
+                    "nume": "Frișcă",
+                    "pret_normal_lei": 4.0,
+                    "pret_redus_lei": 2.0
+                }
+            ]
+        },
+        {
+            "nume": "Băuturi Reci pe Bază de Cafea Solubile/Boabe",
+            "produse": [
+                {
+                    "nume": "Frappe Viva Crunch",
+                    "cantitate": "500ml",
+                    "pret_normal_lei": 26.0,
+                    "pret_redus_lei": 13.0
+                },
+                {
+                    "nume": "Frappe Oreo Crunch",
+                    "cantitate": "500ml",
+                    "pret_normal_lei": 26.0,
+                    "pret_redus_lei": 13.0
+                },
+                {
+                    "nume": "Frappe Clasic",
+                    "cantitate": "500ml",
+                    "pret_normal_lei": 20.0,
+                    "pret_redus_lei": 10.0
+                },
+                {
+                    "nume": "Ice Coffee Viva Crunch",
+                    "cantitate": "500ml",
+                    "pret_normal_lei": 26.0,
+                    "pret_redus_lei": 13.0
+                },
+                {
+                    "nume": "Ice Coffee Oreo Crunch",
+                    "cantitate": "500ml",
+                    "pret_normal_lei": 26.0,
+                    "pret_redus_lei": 13.0
+                },
+                {
+                    "nume": "Ice Coffee Clasic",
+                    "cantitate": "500ml",
+                    "pret_normal_lei": 20.0,
+                    "pret_redus_lei": 10.0
+                }
+            ]
+        },
+        {
+            "nume": "Ape ~ Sucuri",
+            "produse": [
+                {
+                    "nume": "Apă Plată Zizin",
+                    "cantitate": "500ml",
+                    "pret_normal_lei": 10.0,
+                    "pret_redus_lei": 5.0
+                },
+                {
+                    "nume": "Apă Carbogazoasă Zizin",
+                    "cantitate": "500ml",
+                    "pret_normal_lei": 10.0,
+                    "pret_redus_lei": 5.0
+                },
+                {
+                    "nume": "Apă Plată Borsec",
+                    "cantitate": "500ml",
+                    "pret_normal_lei": 10.0,
+                    "pret_redus_lei": 5.0
+                },
+                {
+                    "nume": "Apă Carbogazoasă Borsec",
+                    "cantitate": "500ml",
+                    "pret_normal_lei": 10.0,
+                    "pret_redus_lei": 5.0
+                },
+                {
+                    "nume": "Apă Plată Borsec",
+                    "cantitate": "750ml",
+                    "pret_normal_lei": 20.0,
+                    "pret_redus_lei": 10.0
+                },
+                {
+                    "nume": "Apă Carbogazoasă Borsec",
+                    "cantitate": "750ml",
+                    "pret_normal_lei": 20.0,
+                    "pret_redus_lei": 10.0
+                },
+                {
+                    "nume": "Apă Carbogazoasă Aqua Carpatica Forte",
+                    "cantitate": "750ml",
+                    "pret_normal_lei": 20.0,
+                    "pret_redus_lei": 10.0
+                },
+                {
+                    "nume": "Coca Cola Doză",
+                    "cantitate": "250ml/330ml",
+                    "pret_normal_lei": 14.0,
+                    "pret_redus_lei": 7.0
+                },
+                {
+                    "nume": "Fanta Doză",
+                    "cantitate": "250ml/330ml",
+                    "pret_normal_lei": 14.0,
+                    "pret_redus_lei": 7.0
+                },
+                {
+                    "nume": "Sprite Doză",
+                    "cantitate": "250ml/330ml",
+                    "pret_normal_lei": 14.0,
+                    "pret_redus_lei": 7.0
+                },
+                {
+                    "nume": "Coca Cola Sticlă",
+                    "cantitate": "250ml/330ml",
+                    "pret_normal_lei": 18.0,
+                    "pret_redus_lei": 9.0
+                },
+                {
+                    "nume": "Pepsi Sticlă",
+                    "cantitate": "250ml/330ml",
+                    "pret_normal_lei": 18.0,
+                    "pret_redus_lei": 9.0
+                },
+                {
+                    "nume": "Timbark Vișine",
+                    "cantitate": "250ml",
+                    "pret_normal_lei": 12.0,
+                    "pret_redus_lei": 6.0
+                },
+                {
+                    "nume": "Timbark Zmeură",
+                    "cantitate": "250ml",
+                    "pret_normal_lei": 12.0,
+                    "pret_redus_lei": 6.0
+                },
+                {
+                    "nume": "Prigat Kiwi ~ Pere",
+                    "cantitate": "250ml",
+                    "pret_normal_lei": 20.0,
+                    "pret_redus_lei": 10.0
+                },
+                {
+                    "nume": "Prigat Căpșuni - Banane",
+                    "cantitate": "250ml",
+                    "pret_normal_lei": 20.0,
+                    "pret_redus_lei": 10.0
+                }
+            ]
+        },
+        {
+            "nume": "Apă Tonică ~ Energizante",
+            "produse": [
+                {
+                    "nume": "Schweppes Kinley",
+                    "cantitate": "500ml",
+                    "pret_normal_lei": 18.0,
+                    "pret_redus_lei": 9.0
+                },
+                {
+                    "nume": "Schweppes Kinley",
+                    "cantitate": "250ml/330ml",
+                    "pret_normal_lei": 20.0,
+                    "pret_redus_lei": 10.0
+                },
+                {
+                    "nume": "Evervess",
+                    "cantitate": "250ml",
+                    "pret_normal_lei": 20.0,
+                    "pret_redus_lei": 10.0
+                },
+                {
+                    "nume": "Hell Energy",
+                    "cantitate": "250ml",
+                    "pret_normal_lei": 14.0,
+                    "pret_redus_lei": 7.0
+                },
+                {
+                    "nume": "Red Bull Energy",
+                    "cantitate": "250ml",
+                    "pret_normal_lei": 18.0,
+                    "pret_redus_lei": 9.0
+                },
+                {
+                    "nume": "Fi-Ga Fiori di Guarana",
+                    "cantitate": "250ml",
+                    "pret_normal_lei": 30.0,
+                    "pret_redus_lei": 15.0
+                }
+            ]
+        },
+        {
+            "nume": "Bere - Cidru",
+            "produse": [
+                {
+                    "nume": "Birra Moretti Draught",
+                    "cantitate": "400ml",
+                    "pret_normal_lei": 16.0,
+                    "pret_redus_lei": 8.0
+                },
+                {
+                    "nume": "Birra Moretti Sticlă",
+                    "cantitate": "500ml",
+                    "pret_normal_lei": 16.0,
+                    "pret_redus_lei": 8.0
+                },
+                {
+                    "nume": "Amstel Beer Sticlă",
+                    "cantitate": "330ml",
+                    "pret_normal_lei": 16.0,
+                    "pret_redus_lei": 8.0
+                },
+                {
+                    "nume": "Heineken Sticlă",
+                    "cantitate": "330ml",
+                    "pret_normal_lei": 18.0,
+                    "pret_redus_lei": 9.0
+                },
+                {
+                    "nume": "Ciucaș Sticlă",
+                    "cantitate": "500ml",
+                    "pret_normal_lei": 12.0,
+                    "pret_redus_lei": 6.0
+                },
+                {
+                    "nume": "Strongbow Raspberries",
+                    "cantitate": "330ml",
+                    "pret_normal_lei": 18.0,
+                    "pret_redus_lei": 9.0
+                }
+            ]
+        },
+        {
+            "nume": "Vinuri Albe",
+            "podgorii": [
+                {
+                    "nume": "Podgoria Ostrov",
+                    "produse": [
+                        {
+                            "nume": "Naiada Chardonnay",
+                            "cantitate": "750ml",
+                            "pret_normal_lei": 100.0,
+                            "pret_redus_lei": 40.0
+                        },
+                        {
+                            "nume": "Naiada Sauvignon Blanc",
+                            "cantitate": "750ml",
+                            "pret_normal_lei": 100.0,
+                            "pret_redus_lei": 40.0
+                        },
+                        {
+                            "nume": "Naiada Crâmpoșie",
+                            "cantitate": "750ml",
+                            "pret_normal_lei": 100.0,
+                            "pret_redus_lei": 40.0
+                        },
+                        {
+                            "nume": "Noe Dry Muscat",
+                            "cantitate": "750ml",
+                            "pret_normal_lei": 100.0,
+                            "pret_redus_lei": 40.0
+                        },
+                        {
+                            "nume": "Vinul Casei Carafă",
+                            "cantitate": "500ml",
+                            "pret_normal_lei": 40.0,
+                            "pret_redus_lei": 15.0
+                        }
+                    ]
+                },
+                {
+                    "nume": "Podgoria Sarica Niculițel",
+                    "produse": [
+                        {
+                            "nume": "1958 Sauvignon Blanc ~ Fetească Albă",
+                            "cantitate": "375ml",
+                            "pret_normal_lei": 40.0,
+                            "pret_redus_lei": 20.0
+                        }
+                    ]
+                }
+            ]
+        },
+        {
+            "nume": "Vinuri Roze",
+            "podgorii": [
+                {
+                    "nume": "Podgoria Ostrov",
+                    "produse": [
+                        {
+                            "nume": "Naiada Cuvee Roze",
+                            "cantitate": "750ml",
+                            "pret_normal_lei": 100.0,
+                            "pret_redus_lei": 40.0
+                        }
+                    ]
+                },
+                {
+                    "nume": "Podgoria Sarica Niculițel",
+                    "produse": [
+                        {
+                            "nume": "1958 Cuvee Roze",
+                            "cantitate": "375ml",
+                            "pret_normal_lei": 40.0,
+                            "pret_redus_lei": 20.0
+                        }
+                    ]
+                }
+            ]
+        },
+        {
+            "nume": "Vinuri Roșii",
+            "podgorii": [
+                {
+                    "nume": "Podgoria Ostrov",
+                    "produse": [
+                        {
+                            "nume": "Naiada Fetească Neagră",
+                            "cantitate": "750ml",
+                            "pret_normal_lei": 100.0,
+                            "pret_redus_lei": 40.0
+                        },
+                        {
+                            "nume": "Naiada Syrah",
+                            "cantitate": "750ml",
+                            "pret_normal_lei": 100.0,
+                            "pret_redus_lei": 40.0
+                        }
+                    ]
+                }
+            ]
+        },
+        {
+            "nume": "Aperitive ~ Vermuturi",
+            "produse": [
+                {
+                    "nume": "Bitter Carpaten",
+                    "cantitate": "50ml",
+                    "pret_normal_lei": 10.0,
+                    "pret_redus_lei": 5.0
+                }
+            ]
+        },
+        {
+            "nume": "Brandy",
+            "produse": [
+                {
+                    "nume": "Jidvei Vinars VSOP",
+                    "cantitate": "50ml",
+                    "pret_normal_lei": 20.0,
+                    "pret_redus_lei": 10.0
+                },
+                {
+                    "nume": "Alexandrion 9*",
+                    "cantitate": "50ml",
+                    "pret_normal_lei": 25.0,
+                    "pret_redus_lei": 12.5
+                },
+                {
+                    "nume": "Vecchia Romagna",
+                    "cantitate": "50ml",
+                    "pret_normal_lei": 18.0,
+                    "pret_redus_lei": 9.0
+                },
+                {
+                    "nume": "Alexandrion 5*",
+                    "cantitate": "50ml",
+                    "pret_normal_lei": 13.0,
+                    "pret_redus_lei": 6.5,
+                    "nota": "Corectat din OCR '13 lei/615 lei'"
+                },
+                {
+                    "nume": "Cava D'Oro",
+                    "cantitate": "50ml",
+                    "pret_normal_lei": 12.0,
+                    "pret_redus_lei": 6.0,
+                    "nota": "Corectat din OCR '12 feil 4 bei'"
+                }
+            ]
+        },
+        {
+            "nume": "Vodka",
+            "produse": [
+                {
+                    "nume": "Finlandia",
+                    "cantitate": "50ml",
+                    "pret_normal_lei": 15.0,
+                    "pret_redus_lei": 6.0
+                },
+                {
+                    "nume": "Stalinskaya",
+                    "cantitate": "50ml",
+                    "pret_normal_lei": 15.0,
+                    "pret_redus_lei": 5.0
+                }
+            ]
+        },
+        {
+            "nume": "Tennessee Whiskey",
+            "produse": [
+                {
+                    "nume": "Jack Daniel's",
+                    "cantitate": "50ml",
+                    "pret_normal_lei": 30.0,
+                    "pret_redus_lei": 12.5,
+                    "nota": "Potrivit exact cu textul din PDF ('30 lei/ 12,5 lei')"
+                },
+                {
+                    "nume": "Jack Daniel's Single Barrel",
+                    "cantitate": "50ml",
+                    "pret_normal_lei": 50.0,
+                    "pret_redus_lei": 20.0
+                },
+                {
+                    "nume": "Gentleman Jack",
+                    "cantitate": "50ml",
+                    "pret_normal_lei": 40.0,
+                    "pret_redus_lei": 15.0
+                }
+            ]
+        },
+        {
+            "nume": "Ginuri",
+            "produse": [
+                {
+                    "nume": "Beefeater",
+                    "cantitate": "50ml",
+                    "pret_normal_lei": 20.0,
+                    "pret_redus_lei": 8.0
+                },
+                {
+                    "nume": "Gilman's",
+                    "cantitate": "50ml",
+                    "pret_normal_lei": 20.0,
+                    "pret_redus_lei": 7.0
+                }
+            ]
+        },
+        {
+            "nume": "Blended Scotch Whiskey",
+            "produse": [
+                {
+                    "nume": "Dimple Golden Selection",
+                    "cantitate": "50ml",
+                    "pret_normal_lei": 40.0,
+                    "pret_redus_lei": 15.0
+                }
+            ]
+        },
+        {
+            "nume": "Single Malt Scotch Whiskey",
+            "produse": [
+                {
+                    "nume": "Glenfiddich 12 Ani",
+                    "cantitate": "50ml",
+                    "pret_normal_lei": 50.0,
+                    "pret_redus_lei": 20.0
+                }
+            ]
+        },
+        {
+            "nume": "Long Drink ~ Specialități",
+            "produse": [
+                {
+                    "nume": "Gin Tonic",
+                    "cantitate": "300ml",
+                    "pret_normal_lei": 40.0,
+                    "pret_redus_lei": 20.0
+                },
+                {
+                    "nume": "Mojito",
+                    "cantitate": "300ml",
+                    "pret_normal_lei": 50.0,
+                    "pret_redus_lei": 25.0
+                },
+                {
+                    "nume": "Cuba Libre",
+                    "cantitate": "300ml",
+                    "pret_normal_lei": 50.0,
+                    "pret_redus_lei": 25.0
+                },
+                {
+                    "nume": "Mango Gin Cooler",
+                    "cantitate": "300ml",
+                    "pret_normal_lei": 50.0,
+                    "pret_redus_lei": 25.0
+                },
+                {
+                    "nume": "Punch Ice Tea cu Fructe Proaspete",
+                    "cantitate": "500ml",
+                    "pret_normal_lei": 40.0,
+                    "pret_redus_lei": 20.0
+                },
+                {
+                    "nume": "Punch Ice Tea Mojito cu Fructe Proaspete",
+                    "cantitate": "500ml",
+                    "pret_normal_lei": 50.0,
+                    "pret_redus_lei": 25.0
+                },
+                {
+                    "nume": "Punch Ice Tea Tequila cu Fructe Proaspete",
+                    "cantitate": "500ml",
+                    "pret_normal_lei": 50.0,
+                    "pret_redus_lei": 25.0
+                },
+                {
+                    "nume": "Punch Ice Tea Vodka cu Fructe Proaspete",
+                    "cantitate": "500ml",
+                    "pret_normal_lei": 50.0,
+                    "pret_redus_lei": 25.0
+                },
+                {
+                    "nume": "Punch Sangria cu Fructe Proaspete",
+                    "cantitate": "500ml",
+                    "pret_normal_lei": 40.0,
+                    "pret_redus_lei": 20.0
+                }
+            ]
+        },
+        {
+            "nume": "Limonade ~ Smoothie ~ Specialități",
+            "produse": [
+                {
+                    "nume": "Limonadă Naturală Clasică",
+                    "cantitate": "500ml",
+                    "pret_normal_lei": 25.0,
+                    "pret_redus_lei": 12.0
+                },
+                {
+                    "nume": "Limonadă Popping Boba",
+                    "cantitate": "500ml",
+                    "pret_normal_lei": 30.0,
+                    "pret_redus_lei": 15.0,
+                    "optiuni_siropuri_naturale": [
+                        "Ananas",
+                        "Pepene Galben",
+                        "Pepene Roșu",
+                        "Trandafir Roșu",
+                        "Mango",
+                        "Fructul Pasiunii",
+                        "Blue Curacao",
+                        "Căpșuni",
+                        "Piersici",
+                        "Zmeură"
+                    ]
+                },
+                {
+                    "nume": "Smoothie Fruit Mix cu Suc Natural de Mere",
+                    "cantitate": "500ml",
+                    "pret_normal_lei": 40.0,
+                    "pret_redus_lei": 15.0
+                }
+            ]
+        }
+    ]
+}
