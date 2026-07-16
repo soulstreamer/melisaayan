@@ -436,6 +436,15 @@ main, .foot { position: relative; z-index: 2; }
 }
 .nav a:hover::after, .nav a.is-active::after { transform: scaleX(1); }
 
+.nav a.nav__hh {
+  background: var(--ember); color: #1a1206; font-weight: 700;
+  padding: .6rem 1.15rem; font-size: var(--t-base); border-radius: 100px;
+  box-shadow: 0 4px 14px -6px rgba(224,140,62,.75);
+  transition: transform 160ms var(--ease), background-color 200ms;
+}
+.nav a.nav__hh:hover { background: var(--ember-hi); color: #1a1206; transform: translateY(-1px); }
+.nav a.nav__hh::after { display: none; }
+
 .hdr__tools { display: flex; align-items: center; gap: .5rem; }
 .icon-btn {
   display: grid; place-items: center; width: 40px; height: 40px;
@@ -1102,6 +1111,7 @@ dialog::backdrop { background: rgba(8,11,11,.6); backdrop-filter: blur(3px); }
   .nav.is-open { transform: none; opacity: 1; pointer-events: auto; }
   .nav a { padding: .95rem .2rem; border-bottom: 1px solid var(--line-2); font-size: var(--t-md); }
   .nav a::after { display: none; }
+  .nav a.nav__hh { padding: .7rem 1.15rem; border-bottom: 0; margin: .5rem 0; display: inline-flex; }
   .burger { display: grid; }
   .bon-btn__total { display: none; }
   .brand__name, .brand__tag { display: none; }
@@ -1435,7 +1445,7 @@ dialog::backdrop { background: rgba(8,11,11,.6); backdrop-filter: blur(3px); }
 
     <nav class="nav" id="nav" aria-label="Navigare principală">
       <a href="#meniu">Meniu</a>
-      <a href="index.html#happyhour">Happy Hour</a>
+      <a href="index.html#happyhour" class="nav__hh">Happy Hour</a>
       <a href="index.html#recenzii">Recenzii</a>
       <a href="index.html#livrare">Livrare</a>
       <a href="index.html#rezervare">Rezervare</a>
@@ -1508,7 +1518,7 @@ dialog::backdrop { background: rgba(8,11,11,.6); backdrop-filter: blur(3px); }
       <div>
         <img class="foot__logo" src="assets/logo.png" alt="Sigla La Melania &amp; Ayan Snackbar" width="150" height="128" decoding="async" loading="lazy">
         <span class="brand__name" style="font-size:1.5rem;margin-top:.9rem">La Melania &amp; Ayan</span>
-        <p class="lede" style="font-size:var(--t-sm);margin-top:.7rem;max-width:34ch">Snackbar onest, în mijlocul Videlelor. Cafea, băuturi și gustări la tejghea deschisă.</p>
+        <p class="lede" style="font-size:var(--t-sm);margin-top:.7rem;max-width:34ch">Snackbar onest, în mijlocul Videlor. Cafea, băuturi și gustări la tejghea deschisă.</p>
       </div>
       <div>
         <h4>Navigare</h4>
