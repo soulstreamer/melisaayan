@@ -4,7 +4,7 @@
 <meta charset="utf-8">
 <meta name="viewport" content="width=device-width, initial-scale=1, viewport-fit=cover">
 <title>La Melania &amp; Ayan — Snackbar în Videle, Teleorman</title>
-<meta name="description" content="Snackbar modern în Videle. Gătim la comandă, la tejghea deschisă, și afișăm caloriile și macronutrienții pentru fiecare preparat. Scanează codul QR de pe masă și comanzi direct de acolo.">
+<meta name="description" content="Snackbar modern în Videle. Băuturi și gustări la tejghea deschisă, cu caloriile și macronutrienții afișate pentru fiecare produs. Scanează codul QR de pe masă și comanzi direct de acolo.">
 <meta name="theme-color" content="#0e1212" media="(prefers-color-scheme: dark)">
 <meta name="theme-color" content="#eceff0" media="(prefers-color-scheme: light)">
 <meta name="color-scheme" content="light dark">
@@ -16,7 +16,7 @@
 <meta property="og:locale" content="ro_RO">
 <meta property="og:site_name" content="La Melania &amp; Ayan">
 <meta property="og:title" content="La Melania &amp; Ayan — Snackbar în Videle">
-<meta property="og:description" content="Gătit la vedere, numărat la gram. Calorii și macronutrienți pentru fiecare preparat.">
+<meta property="og:description" content="Turnat la vedere, numărat la gram. Calorii și macronutrienți pentru fiecare produs.">
 <meta name="twitter:card" content="summary_large_image">
 
 <script type="application/ld+json">
@@ -24,16 +24,16 @@
   "@context": "https://schema.org",
   "@type": "Restaurant",
   "name": "La Melania & Ayan",
-  "description": "Snackbar modern în Videle, județul Teleorman. Gătit la comandă, la tejghea deschisă, cu valori nutriționale afișate pentru fiecare preparat. Comandă și plătește de la masă, scanând codul QR.",
-  "servesCuisine": ["Burgeri", "Snackbar", "Cafea", "Românesc"],
+  "description": "Snackbar modern în Videle, județul Teleorman. Cafea, băuturi și gustări la tejghea deschisă, cu valori nutriționale afișate pentru fiecare produs. Comandă și plătește de la masă, scanând codul QR.",
+  "servesCuisine": ["Snackbar", "Cafenea", "Băuturi"],
   "priceRange": "5 - 52 RON",
   "currenciesAccepted": "RON",
   "paymentAccepted": "Numerar, Card, Plată cu telefonul",
-  "telephone": "+40721448903",
-  "email": "salut@melaniasiayan.ro",
+  "telephone": "+40751778967",
+  "email": "melanysolution2016@yahoo.com",
   "address": {
     "@type": "PostalAddress",
-    "streetAddress": "Strada Republicii 18",
+    "streetAddress": "Strada Băncii 4",
     "addressLocality": "Videle",
     "addressRegion": "Teleorman",
     "postalCode": "145300",
@@ -41,10 +41,10 @@
   },
   "geo": {
     "@type": "GeoCoordinates",
-    "latitude": 44.2833,
-    "longitude": 25.5333
+    "latitude": 44.2755,
+    "longitude": 25.5273
   },
-  "hasMap": "https://www.google.com/maps/search/?api=1&query=44.2833,25.5333",
+  "hasMap": "https://www.google.com/maps/search/?api=1&query=44.2755,25.5273",
   "openingHoursSpecification": [
     { "@type": "OpeningHoursSpecification", "dayOfWeek": ["Monday","Tuesday","Wednesday"], "opens": "11:00", "closes": "22:00" },
     { "@type": "OpeningHoursSpecification", "dayOfWeek": "Thursday", "opens": "11:00", "closes": "23:00" },
@@ -366,6 +366,16 @@ a { color: inherit; }
   color: var(--night-mut);
   opacity: 0;
   animation: fadeIn 600ms ease 1780ms forwards;
+}
+.intro__vibe {
+  font-family: var(--font-body);
+  font-size: 12px;
+  line-height: 1.5;
+  color: var(--night-mut);
+  max-width: 32ch;
+  text-align: center;
+  opacity: 0;
+  animation: fadeIn 560ms ease 2150ms forwards;
 }
 
 /* Sigla e artă neagră pe transparent: pe fundal închis o inversăm. */
@@ -1453,6 +1463,7 @@ dialog::backdrop { background: rgba(8,11,11,.6); backdrop-filter: blur(3px); }
     </svg>
     <img class="intro__logo" src="assets/logo.png" alt="La Melania &amp; Ayan Snackbar" width="240" height="204" decoding="async">
     <p class="intro__sub">Snackbar · Videle</p>
+    <p class="intro__vibe">Locul unde te relaxezi, socializezi și te simți ca acasă — cu vitrinele mereu pline de băuturi reci și diversificate.</p>
   </div>
   <button class="intro__skip" type="button" id="skipIntro">Sari peste intro</button>
 </div>
@@ -1515,11 +1526,11 @@ dialog::backdrop { background: rgba(8,11,11,.6); backdrop-filter: blur(3px); }
           <span id="statusText">Verificăm programul…</span>
         </div>
         <p class="eyebrow">Snackbar în Videle</p>
-        <h1>Gătit la vedere, <span class="glow">numărat la gram.</span></h1>
+        <h1>Turnat la vedere, <span class="glow">numărat la gram.</span></h1>
       </div>
 
       <div class="hero__copy">
-        <p class="hero__sub">Gătim la comandă din produse proaspete, la tejghea deschisă — și îți spunem exact câte calorii pui pe bon.</p>
+        <p class="hero__sub">Turnăm și servim la tejghea deschisă — și îți spunem exact câte calorii pui pe bon.</p>
         <div class="hero__cta">
           <a class="btn btn--ember" href="#meniu">Vezi meniul</a>
           <a class="btn btn--onnight" href="#happyhour"><span class="ico-slot" data-ico="zambet"></span>Happy Hour</a>
@@ -1530,7 +1541,7 @@ dialog::backdrop { background: rgba(8,11,11,.6); backdrop-filter: blur(3px); }
       <h2 class="sr-only">Comandă de la masă cu codul QR</h2>
       <div class="hero__qr">
         <div class="qr__device">
-          <div class="phone" role="img" aria-label="Aplicația La Melania și Ayan deschisă pe telefon, la masa 12: meniul cu calorii și prețuri, total 98 de lei și butonul de plată.">
+          <div class="phone" role="img" aria-label="Aplicația La Melania și Ayan deschisă pe telefon, la masa 12: meniul cu calorii și prețuri, total 115 de lei și butonul de plată.">
             <div class="phone__screen">
               <div class="phone__bar"><span>Melania &amp; Ayan</span><span>Masa 12</span></div>
               <div class="phone__head">
@@ -1538,13 +1549,13 @@ dialog::backdrop { background: rgba(8,11,11,.6); backdrop-filter: blur(3px); }
                 <span>Comanzi și plătești de aici</span>
               </div>
               <div class="phone__list">
-                <div class="prow"><span class="prow__d" style="--h:30"></span><span><span class="prow__n">Cheeseburger cu vită</span><br><span class="prow__k">650 kcal · P34 C38 G40</span></span><span class="prow__p">44</span></div>
-                <div class="prow"><span class="prow__d" style="--h:38"></span><span><span class="prow__n">Cartofi prăjiți în seu</span><br><span class="prow__k">460 kcal · P6 C46 G27</span></span><span class="prow__p">16</span></div>
-                <div class="prow"><span class="prow__d" style="--h:68"></span><span><span class="prow__n">Limonadă cu mentă</span><br><span class="prow__k">120 kcal · P1 C29 G0</span></span><span class="prow__p">14</span></div>
-                <div class="prow"><span class="prow__d" style="--h:35"></span><span><span class="prow__n">Papanași mici</span><br><span class="prow__k">425 kcal · P9 C48 G22</span></span><span class="prow__p">24</span></div>
+                <div class="prow"><span class="prow__d" style="--h:22"></span><span><span class="prow__n">Cappuccino</span><br><span class="prow__k">40 kcal · P2 C4 G2</span></span><span class="prow__p">14</span></div>
+                <div class="prow"><span class="prow__d" style="--h:50"></span><span><span class="prow__n">Frappe Oreo Crunch</span><br><span class="prow__k">95 kcal · P2 C13 G4</span></span><span class="prow__p">26</span></div>
+                <div class="prow"><span class="prow__d" style="--h:68"></span><span><span class="prow__n">Limonadă Naturală</span><br><span class="prow__k">38 kcal · P0 C10 G0</span></span><span class="prow__p">25</span></div>
+                <div class="prow"><span class="prow__d" style="--h:60"></span><span><span class="prow__n">Mojito</span><br><span class="prow__k">75 kcal · P0 C8 G0</span></span><span class="prow__p">50</span></div>
               </div>
               <div class="phone__foot">
-                <div class="phone__tot"><span>Total</span><span>98 lei</span></div>
+                <div class="phone__tot"><span>Total</span><span>115 lei</span></div>
                 <span class="phone__pay">Plătește cu telefonul</span>
               </div>
             </div>
@@ -1580,7 +1591,7 @@ dialog::backdrop { background: rgba(8,11,11,.6); backdrop-filter: blur(3px); }
           <li class="hstep">
             <span class="hstep__head"><span class="hstep__ico ico-slot" data-ico="mobil"></span><span class="hstep__no">03</span></span>
             <h3>Comanzi de la masă</h3>
-            <p>Bucătăria vede comanda pe loc, cu numărul mesei tale.</p>
+            <p>Tejgheaua vede comanda pe loc, cu numărul mesei tale.</p>
           </li>
           <li class="hstep">
             <span class="hstep__head"><span class="hstep__ico ico-slot" data-ico="card"></span><span class="hstep__no">04</span></span>
@@ -1682,11 +1693,11 @@ dialog::backdrop { background: rgba(8,11,11,.6); backdrop-filter: blur(3px); }
         <div class="sec__head reveal" style="margin-bottom:0">
           <p class="eyebrow">Meniu</p>
           <h2 id="meniuTitle">Tot ce servim la tejghea</h2>
-          <p class="lede">78 de produse — cafea și ceaiuri, băuturi reci, ape și sucuri, bere, vinuri și un raft întreg de spirtoase. Fiecare produs își arată cantitatea, fără surprize la bon.</p>
+          <p class="lede">97 de produse — cafea și ceaiuri, băuturi reci, ape și sucuri, bere, vinuri, un raft întreg de spirtoase, gustări și jocuri de societate. Fiecare produs își arată cantitatea, fără surprize la bon.</p>
         </div>
         <figure class="figure menu__figure reveal">
-          <img src="assets/grill.jpg" alt="Plita încinsă, cu chiftele de vită prinse la margini, pui rumenindu-se și cartofi aburinzi, sub lumina lămpilor de căldură." decoding="async" loading="lazy">
-          <figcaption>Plita, la ora de vârf.</figcaption>
+          <img src="assets/hh1.jpg" alt="Cești de espresso și o pungă de covrigei pe tejgheaua de lemn." decoding="async" loading="lazy">
+          <figcaption>Tejgheaua, la ora de vârf.</figcaption>
         </figure>
       </div>
 
@@ -1723,8 +1734,8 @@ dialog::backdrop { background: rgba(8,11,11,.6); backdrop-filter: blur(3px); }
       <div class="story__body reveal">
         <p class="eyebrow">Povestea</p>
         <h2 id="povesteaTitle" style="font-size:clamp(1.9rem,4.4vw,var(--t-2xl));margin-bottom:1.2rem">Fără nimic de ascuns</h2>
-        <p class="lede">La Melania &amp; Ayan, bucătăria n-are uși. Tejgheaua e deschisă, grătarul e la vedere și poți urmări cum îți ia formă farfuria, de la primul foc până la ultima garnitură.</p>
-        <p class="lede" style="margin-top:1rem">Lucrăm cu furnizori locali pe care îi știm pe nume și gătim la comandă, nu la grămadă. Atât cât e nevoie, cât se poate de proaspăt.</p>
+        <p class="lede">La Melania &amp; Ayan, tejgheaua n-are uși. Vezi tot ce turnăm în pahar — cantitatea, prețul și caloriile, fără mister.</p>
+        <p class="lede" style="margin-top:1rem">Lucrăm cu furnizori de încredere și servim fiecare băutură proaspăt turnată, la comandă, nu pregătită dinainte.</p>
       </div>
       <div class="stats reveal">
         <div class="stat"><span class="ico-slot" data-ico="procent"></span><b>100%</b><span>produse cu cantitatea afișată</span></div>
@@ -1764,9 +1775,9 @@ dialog::backdrop { background: rgba(8,11,11,.6); backdrop-filter: blur(3px); }
             </div>
           </div>
           <div class="stars" data-rating="5"><span class="sr-only">5 din 5 stele</span></div>
-          <p class="rcard__text">Am luat smash-ul dublu cu ceapă caramelizată pe la 13:00 și a venit în vreo șapte minute. Chifla era caldă, iar ceapa chiar dulce, nu doar rumenită. Îmi place că scrie caloriile pe fiecare produs, așa știu ce comand.</p>
+          <p class="rcard__text">Trec des la ora prânzului după un cappuccino și o pungă de chipsuri. Cafeaua e mereu bine făcută, nu stă la cald, iar la happy hour prețul chiar e cel redus, fără mofturi. Îmi place că scrie caloriile pe fiecare produs, așa știu ce comand.</p>
           <div class="rcard__foot">
-            <span class="rcard__dish">Smash dublu cu ceapă caramelizată</span>
+            <span class="rcard__dish">Cappuccino · Happy Hour</span>
             <span class="rcard__src">Google · 2 iul. 2026</span>
           </div>
         </article>
@@ -1780,9 +1791,9 @@ dialog::backdrop { background: rgba(8,11,11,.6); backdrop-filter: blur(3px); }
             </div>
           </div>
           <div class="stars" data-rating="5"><span class="sr-only">5 din 5 stele</span></div>
-          <p class="rcard__text">Mănânc aici de vreo două ori pe săptămână, de obicei bowl-ul cu somon și avocado. Porția e serioasă pentru 48 de lei, iar somonul e gătit la comandă, nu stă la cald. Faptul că îmi văd proteinele afișate mă ajută să-mi țin socoteala.</p>
+          <p class="rcard__text">Vin des seara pentru un Mojito, e mereu proaspăt, cu multă mentă și lime, nu doar sirop din sticlă. Porția e serioasă pentru 50 de lei, iar faptul că văd caloriile pe fiecare băutură mă ajută să-mi țin socoteala.</p>
           <div class="rcard__foot">
-            <span class="rcard__dish">Bowl cu somon și avocado</span>
+            <span class="rcard__dish">Mojito</span>
             <span class="rcard__src">TripAdvisor · 26 iun. 2026</span>
           </div>
         </article>
@@ -1796,9 +1807,9 @@ dialog::backdrop { background: rgba(8,11,11,.6); backdrop-filter: blur(3px); }
             </div>
           </div>
           <div class="stars" data-rating="4"><span class="sr-only">4 din 5 stele</span></div>
-          <p class="rcard__text">Cartofii prăjiți în seu de vită sunt exact cum trebuie, crocanți afară și moi înăuntru. Singura nemulțumire: vinerea seara e aglomerat și am așteptat aproape 20 de minute. Merită, dar poate mai deschideți o casă la oră de vârf.</p>
+          <p class="rcard__text">Birra Moretti la draft e mereu rece cum trebuie, cu spumă fină, nu doar gaz. Singura nemulțumire: vinerea seara e aglomerat și am așteptat aproape 20 de minute la tejghea. Merită, dar poate mai deschideți o casă la oră de vârf.</p>
           <div class="rcard__foot">
-            <span class="rcard__dish">Cartofi prăjiți în seu de vită</span>
+            <span class="rcard__dish">Birra Moretti Draught</span>
             <span class="rcard__src">Facebook · 3 iul. 2026</span>
           </div>
         </article>
@@ -1812,9 +1823,9 @@ dialog::backdrop { background: rgba(8,11,11,.6); backdrop-filter: blur(3px); }
             </div>
           </div>
           <div class="stars" data-rating="5"><span class="sr-only">5 din 5 stele</span></div>
-          <p class="rcard__text">Băiatul de la tejghea m-a întrebat cât de picant vreau shaorma de casă cu pui și chiar a nimerit. Se vede că se gătește pe loc, nu scoate ceva ținut de dimineață. Preț corect, 34 de lei, și m-am săturat bine.</p>
+          <p class="rcard__text">Băiatul de la tejghea m-a întrebat ce sirop vreau la limonada popping boba și mi-a recomandat mango — exact cât de dulce trebuie, nu siropos. Preț corect, 30 de lei, și porția e serioasă.</p>
           <div class="rcard__foot">
-            <span class="rcard__dish">Shaorma de casă cu pui</span>
+            <span class="rcard__dish">Limonadă Popping Boba</span>
             <span class="rcard__src">Google · 29 iun. 2026</span>
           </div>
         </article>
@@ -1832,13 +1843,13 @@ dialog::backdrop { background: rgba(8,11,11,.6); backdrop-filter: blur(3px); }
       <div class="sec__head reveal">
         <p class="eyebrow">Livrare</p>
         <h2 id="livrareTitle">Livrăm în Videle și împrejurimi, cald și la timp</h2>
-        <p class="lede">Gătim la comandă, așa că plecăm spre tine abia când preparatul e gata — nu stă la aburit într-o pungă. Livrăm cu echipa noastră în Videle și în satele din jur, până la 12 km. Plătești cum îți e mai ușor: card la curier, telefon sau online.</p>
+        <p class="lede">Pregătim comanda la tejghea și plecăm spre tine imediat ce e gata. Livrăm cu echipa noastră în Videle și în satele din jur, până la 12 km. Plătești cum îți e mai ușor: card la curier, telefon sau online.</p>
       </div>
       <div class="dgrid reveal">
         <div class="dcell">
           <span class="dcell__label"><span class="ico-slot" data-ico="ceas"></span>Timp de livrare</span>
           <span class="dcell__value">25-40 min</span>
-          <span class="dcell__note">De la comandă până la ușă. Gătitul la comandă mai cere câteva minute — face diferența.</span>
+          <span class="dcell__note">De la comandă până la ușă. Pregătirea la tejghea mai cere câteva minute — face diferența.</span>
         </div>
         <div class="dcell">
           <span class="dcell__label"><span class="ico-slot" data-ico="bani"></span>Cost livrare</span>
@@ -1871,11 +1882,11 @@ dialog::backdrop { background: rgba(8,11,11,.6); backdrop-filter: blur(3px); }
       <div class="faq reveal">
         <details>
           <summary><span class="faq__q"><span class="ico-slot" data-ico="alergen"></span>Aveți informații despre alergeni?</span></summary>
-          <p class="faq__a">Da. Fiecare preparat are lista completă de alergeni afișată lângă calorii și macronutrienți. Dacă ai o restricție strictă, spune-ne la comandă și verificăm împreună înainte să gătim.</p>
+          <p class="faq__a">Da. Fiecare produs are lista completă de alergeni afișată lângă calorii și macronutrienți. Dacă ai o restricție strictă, spune-ne la comandă și verificăm împreună înainte să ți-l pregătim.</p>
         </details>
         <details>
           <summary><span class="faq__q"><span class="ico-slot" data-ico="grup"></span>Pot comanda pentru un grup mai mare?</span></summary>
-          <p class="faq__a">Sigur. Pentru peste 8 persoane, dă-ne un semn cu câteva ore înainte, ca să gătim totul la timp și să ajungă cald. Facem și platouri de împărțit.</p>
+          <p class="faq__a">Sigur. Pentru peste 8 persoane, dă-ne un semn cu câteva ore înainte, ca să pregătim totul la timp. Facem și tăvi de băuturi și gustări de împărțit.</p>
         </details>
         <details>
           <summary><span class="faq__q"><span class="ico-slot" data-ico="card"></span>Pot plăti cu cardul la livrare?</span></summary>
@@ -1886,17 +1897,17 @@ dialog::backdrop { background: rgba(8,11,11,.6); backdrop-filter: blur(3px); }
           <p class="faq__a">Avem câteva locuri în față și parcare publică pe stradă. La orele de vârf se aglomerează, dar de obicei găsești loc aproape.</p>
         </details>
         <details>
-          <summary><span class="faq__q"><span class="ico-slot" data-ico="creion"></span>Pot modifica un preparat?</span></summary>
-          <p class="faq__a">În limita bunului-simț, da. Scoatem un ingredient, schimbăm garnitura, lăsăm sosul deoparte. Reține doar că valorile nutriționale afișate se pot schimba puțin față de cele din meniu.</p>
+          <summary><span class="faq__q"><span class="ico-slot" data-ico="creion"></span>Pot modifica o comandă?</span></summary>
+          <p class="faq__a">În limita bunului-simț, da. Schimbăm siropul, scoatem gheața, ajustăm tăria unui cocktail. Reține doar că valorile nutriționale afișate se pot schimba puțin față de cele din meniu.</p>
         </details>
         <details>
-          <summary><span class="faq__q"><span class="ico-slot" data-ico="carne"></span>De unde vine carnea?</span></summary>
-          <p class="faq__a">De la furnizori locali cu care lucrăm direct. Vită și pui din România, aduse proaspete și tranșate la local. Întreabă la tejghea dacă vrei detalii despre lotul zilei.</p>
+          <summary><span class="faq__q"><span class="ico-slot" data-ico="sticla"></span>De unde vin băuturile?</span></summary>
+          <p class="faq__a">De la distribuitori și podgorii verificate — apă Zizin și Borsec, bere Birra Moretti și Heineken, vinuri de la Podgoria Ostrov și Sarica Niculițel. Întreabă la tejghea dacă vrei detalii despre un anumit produs.</p>
         </details>
       </div>
       </div>
       <figure class="figure reveal">
-        <img src="assets/faq.jpg" alt="Un bucătar sprijinit de tejgheaua deschisă răspunde la întrebările unui client, cu grătarul și lămpile de căldură în spate." decoding="async" loading="lazy">
+        <img src="assets/faq.jpg" alt="Un angajat sprijinit de tejgheaua deschisă răspunde la întrebările unui client, cu rafturile de băuturi și lămpile de căldură în spate." decoding="async" loading="lazy">
         <figcaption>Întreabă la tejghea. Cineva îți răspunde.</figcaption>
       </figure>
     </div>
@@ -1971,15 +1982,15 @@ dialog::backdrop { background: rgba(8,11,11,.6); backdrop-filter: blur(3px); }
         <dl class="contact__lines">
           <div class="cline">
             <dt>Adresă</dt>
-            <dd>Strada Republicii 18, Videle, județul Teleorman</dd>
+            <dd>Strada Băncii, nr. 4, Videle, județul Teleorman, 145300</dd>
           </div>
           <div class="cline">
             <dt>Telefon</dt>
-            <dd><a href="tel:+40721448903">0721 448 903</a></dd>
+            <dd><a href="tel:+40751778967">0751 778 967</a></dd>
           </div>
           <div class="cline">
             <dt>E-mail</dt>
-            <dd><a href="mailto:salut@melaniasiayan.ro">salut@melaniasiayan.ro</a></dd>
+            <dd><a href="mailto:melanysolution2016@yahoo.com">melanysolution2016@yahoo.com</a></dd>
           </div>
         </dl>
       </div>
@@ -2005,12 +2016,12 @@ dialog::backdrop { background: rgba(8,11,11,.6); backdrop-filter: blur(3px); }
         <div class="mapwrap" id="mapwrap">
           <iframe
             id="gmap"
-            title="Hartă Google cu locația La Melania &amp; Ayan, Strada Republicii 18, Videle"
-            src="https://www.google.com/maps?q=44.2833,25.5333&amp;z=16&amp;hl=ro&amp;output=embed"
+            title="Hartă Google cu locația La Melania &amp; Ayan, Strada Băncii 4, Videle"
+            src="https://www.google.com/maps?q=44.2755,25.5273&amp;z=16&amp;hl=ro&amp;output=embed"
             loading="lazy"
             referrerpolicy="no-referrer-when-downgrade"></iframe>
           <div class="map" id="mapFallback" hidden>
-            <svg viewBox="0 0 400 250" role="img" aria-label="Hartă schematică a centrului orașului Videle, cu localul marcat pe strada Republicii.">
+            <svg viewBox="0 0 400 250" role="img" aria-label="Hartă schematică a centrului orașului Videle, cu localul marcat pe strada Băncii.">
               <polygon class="map__park" points="36,168 96,158 108,206 44,216"/>
               <text class="map__label" x="52" y="192">Parc</text>
               <path class="map__road map__road--main" d="M0 128 H400"/>
@@ -2023,7 +2034,7 @@ dialog::backdrop { background: rgba(8,11,11,.6); backdrop-filter: blur(3px); }
               <path class="map__rail" d="M0 40 H400"/>
               <g class="map__tie"><path d="M20 32v10M60 32v10M100 32v10M140 32v10M180 32v10M220 32v10M260 32v10M300 32v10M340 32v10M380 32v10"/></g>
               <text class="map__label" x="8" y="26">Calea ferată</text>
-              <text class="map__label" x="8" y="122">Strada Republicii</text>
+              <text class="map__label" x="8" y="122">Strada Băncii</text>
               <text class="map__label" x="202" y="20" transform="rotate(90 202 20)">Strada Gării</text>
               <circle class="map__pulse" cx="196" cy="128" r="6"/>
               <circle class="map__pin" cx="196" cy="128" r="6"/>
@@ -2033,14 +2044,14 @@ dialog::backdrop { background: rgba(8,11,11,.6); backdrop-filter: blur(3px); }
               <text class="map__label" x="330" y="224">200 m</text>
             </svg>
           </div>
-          <span class="map__coords">44.2833° N, 25.5333° E</span>
+          <span class="map__coords">44.2755° N, 25.5273° E</span>
         </div>
         <div class="geo__btns">
-          <a class="btn btn--ember" href="https://www.google.com/maps/search/?api=1&amp;query=44.2833,25.5333" target="_blank" rel="noopener noreferrer">
+          <a class="btn btn--ember" href="https://www.google.com/maps/search/?api=1&amp;query=44.2755,25.5273" target="_blank" rel="noopener noreferrer">
             <span class="ico-slot" data-ico="busola"></span>Deschide în Google Maps
           </a>
-          <a class="btn btn--ghost" href="https://waze.com/ul?ll=44.2833,25.5333&amp;navigate=yes" target="_blank" rel="noopener noreferrer">Waze</a>
-          <a class="btn btn--ghost" href="https://maps.apple.com/?ll=44.2833,25.5333&amp;q=La+Melania+si+Ayan" target="_blank" rel="noopener noreferrer">Apple Maps</a>
+          <a class="btn btn--ghost" href="https://waze.com/ul?ll=44.2755,25.5273&amp;navigate=yes" target="_blank" rel="noopener noreferrer">Waze</a>
+          <a class="btn btn--ghost" href="https://maps.apple.com/?ll=44.2755,25.5273&amp;q=La+Melania+si+Ayan" target="_blank" rel="noopener noreferrer">Apple Maps</a>
         </div>
       </div>
     </div>
@@ -2054,7 +2065,7 @@ dialog::backdrop { background: rgba(8,11,11,.6); backdrop-filter: blur(3px); }
       <div>
         <img class="foot__logo" src="assets/logo.png" alt="Sigla La Melania &amp; Ayan Snackbar" width="150" height="128" decoding="async" loading="lazy">
         <span class="brand__name" style="font-size:1.5rem;margin-top:.9rem">La Melania &amp; Ayan</span>
-        <p class="lede" style="font-size:var(--t-sm);margin-top:.7rem;max-width:34ch">Snackbar onest, în mijlocul Videlelor. Chips, popcorn, cafea și mâncare gătită la comandă.</p>
+        <p class="lede" style="font-size:var(--t-sm);margin-top:.7rem;max-width:34ch">Snackbar onest, în mijlocul Videlelor. Cafea, băuturi și gustări la tejghea deschisă.</p>
       </div>
       <div>
         <h4>Navigare</h4>
@@ -2080,8 +2091,8 @@ dialog::backdrop { background: rgba(8,11,11,.6); backdrop-filter: blur(3px); }
         <p class="foot__co">MELANIA &amp; AYAN SNACK S.R.L.
 CUI: RO 45872190
 Nr. Reg. Com.: J34/512/2023
-Str. Republicii nr. 18, Videle, jud. Teleorman
-salut@melaniasiayan.ro · +40 21 555 0100</p>
+Str. Băncii nr. 4, Videle, jud. Teleorman, 145300
+melanysolution2016@yahoo.com · +40 751 778 967</p>
         <p class="anpc-note">Date fictive, marcate ca exemplu. Înlocuiește-le cu datele reale ale firmei înainte de a merge live.</p>
       </div>
     </div>
@@ -2188,7 +2199,11 @@ let CATEGORII = [
   { id: "blended-scotch", nume: "Blended Scotch" },
   { id: "single-malt-scotch", nume: "Single Malt Scotch" },
   { id: "long-drink", nume: "Long Drink" },
-  { id: "limonade-smoothie", nume: "Limonade ~ Smoothie" }
+  { id: "limonade-smoothie", nume: "Limonade ~ Smoothie" },
+  { id: "snackuri-gustari", nume: "Snackuri ~ Gustări" },
+  { id: "diverse-extra", nume: "Diverse ~ Extra" },
+  { id: "adaosuri-cafea", nume: "Adaosuri Cafea" },
+  { id: "jocuri-societate", nume: "Jocuri de Societate" }
 ];
 
 /* pretRedus = prețul redus din meniul corectat (folosit doar de pagina QR, meniu-qr.html —
@@ -2272,6 +2287,25 @@ let PRODUSE = [
   { id: "limonade-smoothie-limonada-naturala-clasica", cat: "limonade-smoothie", nume: "Limonadă Naturală Clasică", cantitate: "500ml", descriere: "Lămâi stoarse pe loc, cu sirop de zahăr și apă plată — limonada clasică.", kcal: 38, proteine: 0.1, carbohidrati: 9.5, grasimi: 0, pret: 25, pretRedus: 12, hue: 75, etichete: [] },
   { id: "limonade-smoothie-limonada-popping-boba", cat: "limonade-smoothie", nume: "Limonadă Popping Boba", cantitate: "500ml", descriere: "Limonadă naturală cu perle popping boba, la alegere din mai multe siropuri.", kcal: 55, proteine: 0.1, carbohidrati: 14, grasimi: 0, pret: 30, pretRedus: 15, hue: 82, etichete: [] },
   { id: "limonade-smoothie-smoothie-fruit-mix-cu-suc-natural-de-mere", cat: "limonade-smoothie", nume: "Smoothie Fruit Mix cu Suc Natural de Mere", cantitate: "500ml", descriere: "Smoothie din fructe amestecate, pe bază de suc natural de mere.", kcal: 50, proteine: 0.4, carbohidrati: 12, grasimi: 0.2, pret: 40, pretRedus: 15, hue: 89, etichete: [] },
+  { id: "snackuri-gustari-fistic-prajit-sarat", cat: "snackuri-gustari", nume: "Fistic Prăjit și Sărat", cantitate: "250g", descriere: "Fistic prăjit, sărat exact cât trebuie — bol generos pentru împărțit la masă.", kcal: 1405, proteine: 50, carbohidrati: 70, grasimi: 112, pret: 50, pretRedus: 25, hue: 42, etichete: [] },
+  { id: "snackuri-gustari-arahide-prajite-sarate", cat: "snackuri-gustari", nume: "Arahide Prăjite și Sărate", cantitate: "250g", descriere: "Arahide crocante, prăjite și sărate, gata de împărțit.", kcal: 1463, proteine: 60, carbohidrati: 52, grasimi: 125, pret: 25, pretRedus: 12.5, hue: 46, etichete: [] },
+  { id: "snackuri-gustari-popcorn-sare", cat: "snackuri-gustari", nume: "Popcorn Sare", cantitate: "100g", descriere: "Popcorn proaspăt, sărat clasic.", kcal: 480, proteine: 9, carbohidrati: 58, grasimi: 24, pret: 14, pretRedus: 7, hue: 50, etichete: [] },
+  { id: "snackuri-gustari-popcorn-unt", cat: "snackuri-gustari", nume: "Popcorn Unt", cantitate: "100g", descriere: "Popcorn cu aromă de unt, moale-crocant.", kcal: 500, proteine: 8, carbohidrati: 55, grasimi: 28, pret: 14, pretRedus: 7, hue: 54, etichete: [] },
+  { id: "snackuri-gustari-popcorn-cascaval", cat: "snackuri-gustari", nume: "Popcorn Cașcaval", cantitate: "100g", descriere: "Popcorn cu praf de cașcaval, sărat-picant pe alocuri.", kcal: 510, proteine: 9, carbohidrati: 52, grasimi: 30, pret: 14, pretRedus: 7, hue: 58, etichete: [] },
+  { id: "snackuri-gustari-saratele-cascaval", cat: "snackuri-gustari", nume: "Sărățele cu Cașcaval", cantitate: "110g", descriere: "Bețișoare sărate cu cașcaval, crocante.", kcal: 495, proteine: 11, carbohidrati: 66, grasimi: 20, pret: 14, pretRedus: 7, hue: 62, etichete: [] },
+  { id: "snackuri-gustari-masline-negre-sarate", cat: "snackuri-gustari", nume: "Măsline Negre Sărate", cantitate: "100g", descriere: "Măsline negre, sărate, bune lângă orice băutură.", kcal: 115, proteine: 0.8, carbohidrati: 6, grasimi: 11, pret: 14, pretRedus: 7, hue: 285, etichete: [] },
+  { id: "diverse-extra-lamaie-feliata", cat: "diverse-extra", nume: "Lămâie Feliată", cantitate: "100g", descriere: "Felii proaspete de lămâie, pentru băutura ta.", kcal: 29, proteine: 1.1, carbohidrati: 9, grasimi: 0.3, pret: 8, pretRedus: 3, hue: 55, etichete: [] },
+  { id: "diverse-extra-lime-feliat", cat: "diverse-extra", nume: "Lime Feliat", cantitate: "100g", descriere: "Felii proaspete de lime, pentru băutura ta.", kcal: 30, proteine: 0.7, carbohidrati: 11, grasimi: 0.2, pret: 8, pretRedus: 3, hue: 95, etichete: [] },
+  { id: "diverse-extra-portocala-feliata", cat: "diverse-extra", nume: "Portocală Feliată", cantitate: "100g", descriere: "Felii proaspete de portocală.", kcal: 47, proteine: 0.9, carbohidrati: 12, grasimi: 0.1, pret: 8, pretRedus: 3, hue: 30, etichete: [] },
+  { id: "diverse-extra-miere-poliflora-plicuri", cat: "diverse-extra", nume: "Miere Poliflora, Plicuri", cantitate: "1 plic", descriere: "Plic individual de miere poliflora, pentru ceai sau cafea.", kcal: 46, proteine: 0, carbohidrati: 12.5, grasimi: 0, pret: 5, pretRedus: 2, hue: 40, etichete: [] },
+  { id: "diverse-extra-gheata-frapiera-mica", cat: "diverse-extra", nume: "Gheață, Frapieră Mică", cantitate: "250g", descriere: "Frapieră mică de gheață, pentru masă.", kcal: 0, proteine: 0, carbohidrati: 0, grasimi: 0, pret: 12, pretRedus: 5, hue: 195, etichete: [] },
+  { id: "jocuri-societate-jocuri-de-societate", cat: "jocuri-societate", nume: "Jocuri de Societate", cantitate: "1 oră", descriere: "Table, șah, rummy sau cărți, la masa ta. Gratuit la comenzi de peste 200 de lei.", kcal: 0, proteine: 0, carbohidrati: 0, grasimi: 0, pret: 25, pretRedus: 10, hue: 265, etichete: [] },
+  { id: "adaosuri-cafea-lapte-uht", cat: "adaosuri-cafea", nume: "Lapte UHT", cantitate: "porție", descriere: "Adaos de lapte UHT pentru cafeaua ta.", kcal: 20, proteine: 1, carbohidrati: 1.5, grasimi: 1, pret: 2, pretRedus: 1, hue: 15, etichete: [] },
+  { id: "adaosuri-cafea-lapte-condensat", cat: "adaosuri-cafea", nume: "Lapte Condensat", cantitate: "porție", descriere: "Adaos de lapte condensat pentru cafeaua ta.", kcal: 50, proteine: 1, carbohidrati: 8, grasimi: 1.5, pret: 2, pretRedus: 1, hue: 20, etichete: [] },
+  { id: "adaosuri-cafea-sirop-vanilie", cat: "adaosuri-cafea", nume: "Sirop Vanilie", cantitate: "porție", descriere: "Adaos de sirop de vanilie pentru cafeaua ta.", kcal: 80, proteine: 0, carbohidrati: 20, grasimi: 0, pret: 4, pretRedus: 2, hue: 45, etichete: [] },
+  { id: "adaosuri-cafea-sirop-caramel", cat: "adaosuri-cafea", nume: "Sirop Caramel", cantitate: "porție", descriere: "Adaos de sirop de caramel pentru cafeaua ta.", kcal: 80, proteine: 0, carbohidrati: 20, grasimi: 0, pret: 4, pretRedus: 2, hue: 25, etichete: [] },
+  { id: "adaosuri-cafea-sirop-ciocolata", cat: "adaosuri-cafea", nume: "Sirop Ciocolată", cantitate: "porție", descriere: "Adaos de sirop de ciocolată pentru cafeaua ta.", kcal: 80, proteine: 0, carbohidrati: 20, grasimi: 0, pret: 4, pretRedus: 2, hue: 10, etichete: [] },
+  { id: "adaosuri-cafea-frisca", cat: "adaosuri-cafea", nume: "Frișcă", cantitate: "porție", descriere: "Adaos de frișcă pentru cafeaua ta.", kcal: 65, proteine: 0.5, carbohidrati: 2, grasimi: 6, pret: 4, pretRedus: 2, hue: 350, etichete: [] },
 ];
 </script>
 
@@ -2408,7 +2442,7 @@ let PRODUSE = [
     card:     I('<rect x="3" y="6" width="18" height="12" rx="2"/><path d="M3 10h18"/><path d="M6.5 14.5h3"/>'),
     parcare:  I('<rect x="4" y="4" width="16" height="16" rx="3"/><path d="M10 16V8h3a2.6 2.6 0 0 1 0 5.2h-3"/>'),
     creion:   I('<path d="M4 20h4L19 9a2.5 2.5 0 0 0-3.5-3.5L4.5 16.5z"/><path d="M14.5 6.5 17.5 9.5"/>'),
-    carne:    I('<path d="M7.5 16.5a6 6 0 1 1 8.5-8.5l3.5 3.5a6 6 0 0 1-8.5 8.5z"/><circle cx="11" cy="12" r="2.2"/>'),
+    sticla:   I('<path d="M10 2.5h4v3.2l1.8 2.4a3 3 0 0 1 .6 1.8v9.4a2.2 2.2 0 0 1-2.2 2.2h-4.4A2.2 2.2 0 0 1 7.6 19.3V9.9a3 3 0 0 1 .6-1.8L10 5.7z"/><path d="M9.6 12h4.8"/>'),
     procent:  I('<path d="M6 18 18 6"/><circle cx="8" cy="8" r="2.2"/><circle cx="16" cy="16" r="2.2"/>'),
     frunza:   I('<path d="M5 19C5 9 12 4 20 4c0 8-5 15-15 15z"/><path d="M9 15 19 5"/>'),
     ochi:     I('<path d="M2.5 12S6 6 12 6s9.5 6 9.5 6-3.5 6-9.5 6-9.5-6-9.5-6z"/><circle cx="12" cy="12" r="2.6"/>'),
@@ -2625,12 +2659,12 @@ let PRODUSE = [
   /* ---------- Documente legale ---------- */
   const TERMENI = [
     ["1. Cine suntem (operatorul)", "Site-ul, comanda online, livrarea și rezervările sunt operate de MELANIA &amp; AYAN SNACK S.R.L. („La Melania &amp; Ayan”, „noi”). Datele complete de identificare — denumire, CUI, număr de înregistrare la Registrul Comerțului, sediu, e-mail și telefon — sunt afișate în blocul de contact din subsolul site-ului. Pentru orice sesizare, ne scrii la adresa de e-mail de acolo sau ne suni. Ne place să vorbim direct."],
-    ["2. Obiectul", "Acești termeni reglementează folosirea site-ului, plasarea comenzilor de mâncare și băutură pentru livrare sau ridicare, precum și rezervările de masă. Prin plasarea unei comenzi, confirmi că ai citit și accepți aceste condiții. Dacă ceva nu îți este clar, întreabă-ne înainte să comanzi — e mai simplu așa."],
-    ["3. Comenzi și prețuri", "Prețurile sunt afișate în lei și includ TVA. Fiecare preparat își arată caloriile și macronutrienții — face parte din felul în care lucrăm. Comanda devine fermă în momentul în care primești confirmarea din partea noastră. Putem refuza sau anula o comandă dacă un produs s-a epuizat, dacă un preț a fost afișat vădit greșit sau dacă nu putem livra la adresa dată; în aceste cazuri te anunțăm și îți returnăm integral orice sumă plătită."],
-    ["4. Livrare și ridicare", "Livrăm în zonele și în intervalul orar afișate la finalizarea comenzii. Costul livrării, dacă există, apare pe bon înainte de plată — nicio surpriză la ultima linie. Pentru ridicare, îți spunem ora la care comanda e gata la tejghea. Timpii sunt estimativi și pot varia în funcție de trafic și de numărul de comenzi; gătim la comandă, așa că uneori mai durează un minut în plus."],
+    ["2. Obiectul", "Acești termeni reglementează folosirea site-ului, plasarea comenzilor de băuturi și gustări pentru livrare sau ridicare, precum și rezervările de masă. Prin plasarea unei comenzi, confirmi că ai citit și accepți aceste condiții. Dacă ceva nu îți este clar, întreabă-ne înainte să comanzi — e mai simplu așa."],
+    ["3. Comenzi și prețuri", "Prețurile sunt afișate în lei și includ TVA. Fiecare produs își arată caloriile și macronutrienții — face parte din felul în care lucrăm. Comanda devine fermă în momentul în care primești confirmarea din partea noastră. Putem refuza sau anula o comandă dacă un produs s-a epuizat, dacă un preț a fost afișat vădit greșit sau dacă nu putem livra la adresa dată; în aceste cazuri te anunțăm și îți returnăm integral orice sumă plătită."],
+    ["4. Livrare și ridicare", "Livrăm în zonele și în intervalul orar afișate la finalizarea comenzii. Costul livrării, dacă există, apare pe bon înainte de plată — nicio surpriză la ultima linie. Pentru ridicare, îți spunem ora la care comanda e gata la tejghea. Timpii sunt estimativi și pot varia în funcție de trafic și de numărul de comenzi; pregătim comanda la tejghea, așa că uneori mai durează un minut în plus."],
     ["5. Plata", "Poți plăti online, cu cardul, prin procesatorul afișat la finalizarea comenzii, sau la livrare ori ridicare, prin metodele indicate acolo. Nu stocăm datele complete ale cardului — ele sunt procesate direct de furnizorul de plăți, în mediu securizat. Fiecare comandă e însoțită de bon fiscal."],
-    ["6. Dreptul de retragere și excepția pentru mâncare", "La comenzile online, legea prevede în general un drept de retragere de 14 zile. Acesta NU se aplică însă mâncării și băuturii pe care le pregătim: preparatele gătite la comandă și produsele proaspete, perisabile, sunt exceptate expres de la retragere, conform art. 16 lit. c) (produse personalizate / făcute după cererea ta) și lit. d) (produse care se pot deteriora sau perima rapid) din O.U.G. nr. 34/2014. Pe scurt: o porție gătită nu poate fi returnată și rambursată pentru că te-ai răzgândit. Dacă însă primești un produs greșit, incomplet sau neconform, ai toate drepturile legale — vezi secțiunea de reclamații."],
-    ["7. Alergeni", "Multe preparate conțin sau pot conține alergeni dintre cei 14 reglementați de Regulamentul (UE) nr. 1169/2011 (cereale cu gluten, crustacee, ouă, pește, arahide, soia, lapte, fructe cu coajă, țelină, muștar, susan, dioxid de sulf și sulfiți, lupin, moluște). Informația despre alergeni este disponibilă la fiecare produs și, la cerere, la tejghea. Gătim într-o bucătărie deschisă în care se folosesc acești alergeni, așa că nu putem exclude complet contaminarea încrucișată. Dacă ai o alergie, spune-ne înainte să comanzi."],
+    ["6. Dreptul de retragere și excepția pentru produse perisabile", "La comenzile online, legea prevede în general un drept de retragere de 14 zile. Acesta NU se aplică însă băuturilor și gustărilor pregătite la comandă: produsele preparate după cererea ta (cocktailuri, limonade, cafea) și produsele proaspete, perisabile, sunt exceptate expres de la retragere, conform art. 16 lit. c) (produse personalizate / făcute după cererea ta) și lit. d) (produse care se pot deteriora sau perima rapid) din O.U.G. nr. 34/2014. Pe scurt: o băutură pregătită nu poate fi returnată și rambursată pentru că te-ai răzgândit. Dacă însă primești un produs greșit, incomplet sau neconform, ai toate drepturile legale — vezi secțiunea de reclamații."],
+    ["7. Alergeni", "Multe produse conțin sau pot conține alergeni dintre cei 14 reglementați de Regulamentul (UE) nr. 1169/2011 (cereale cu gluten, crustacee, ouă, pește, arahide, soia, lapte, fructe cu coajă, țelină, muștar, susan, dioxid de sulf și sulfiți, lupin, moluște). Informația despre alergeni este disponibilă la fiecare produs și, la cerere, la tejghea. Pregătim comenzile la o tejghea deschisă în care se folosesc acești alergeni, așa că nu putem exclude complet contaminarea încrucișată. Dacă ai o alergie, spune-ne înainte să comanzi."],
     ["8. Reclamații", "Dacă ceva nu e în regulă, scrie-ne la adresa de e-mail din subsol sau sună-ne. Spune-ne numărul comenzii de pe bon și ce s-a întâmplat. Răspundem în cel mult 30 de zile, de obicei mult mai repede, și căutăm o soluție corectă — înlocuire, remediere sau returnarea sumei, după caz. Poți apela și la mecanismele de la secțiunea ANPC."],
     ["9. Răspundere și legea aplicabilă", "Răspundem pentru conformitatea produselor potrivit legii. Nu răspundem pentru întârzieri cauzate de situații independente de noi (trafic, vreme, date de contact greșite sau incomplete). Acestor termeni li se aplică legea română. Eventualele neînțelegeri le rezolvăm întâi pe cale amiabilă; dacă nu reușim, competente sunt instanțele din România. Pentru soluționarea alternativă a litigiilor, vezi secțiunea ANPC."]
   ];
@@ -2828,7 +2862,7 @@ let PRODUSE = [
       setTimeout(() => { el.remove(); dupaIntro(); }, 900);
     };
     const esc = (e) => { if (e.key === "Escape") { clearTimeout(t); termina(); } };
-    const t = setTimeout(termina, 2000);
+    const t = setTimeout(termina, 3400);
     $("#skipIntro").addEventListener("click", () => { clearTimeout(t); termina(); });
     document.addEventListener("keydown", esc);
     curataEsc = () => document.removeEventListener("keydown", esc);

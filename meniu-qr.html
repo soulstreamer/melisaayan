@@ -25,16 +25,16 @@
   "@context": "https://schema.org",
   "@type": "Restaurant",
   "name": "La Melania & Ayan",
-  "description": "Snackbar modern în Videle, județul Teleorman. Gătit la comandă, la tejghea deschisă, cu valori nutriționale afișate pentru fiecare preparat. Comandă și plătește de la masă, scanând codul QR.",
-  "servesCuisine": ["Burgeri", "Snackbar", "Cafea", "Românesc"],
+  "description": "Snackbar modern în Videle, județul Teleorman. Cafea, băuturi și gustări la tejghea deschisă, cu valori nutriționale afișate pentru fiecare produs. Comandă și plătește de la masă, scanând codul QR.",
+  "servesCuisine": ["Snackbar", "Cafenea", "Băuturi"],
   "priceRange": "5 - 52 RON",
   "currenciesAccepted": "RON",
   "paymentAccepted": "Numerar, Card, Plată cu telefonul",
-  "telephone": "+40721448903",
-  "email": "salut@melaniasiayan.ro",
+  "telephone": "+40751778967",
+  "email": "melanysolution2016@yahoo.com",
   "address": {
     "@type": "PostalAddress",
-    "streetAddress": "Strada Republicii 18",
+    "streetAddress": "Strada Băncii 4",
     "addressLocality": "Videle",
     "addressRegion": "Teleorman",
     "postalCode": "145300",
@@ -42,10 +42,10 @@
   },
   "geo": {
     "@type": "GeoCoordinates",
-    "latitude": 44.2833,
-    "longitude": 25.5333
+    "latitude": 44.2755,
+    "longitude": 25.5273
   },
-  "hasMap": "https://www.google.com/maps/search/?api=1&query=44.2833,25.5333",
+  "hasMap": "https://www.google.com/maps/search/?api=1&query=44.2755,25.5273",
   "openingHoursSpecification": [
     { "@type": "OpeningHoursSpecification", "dayOfWeek": ["Monday","Tuesday","Wednesday"], "opens": "11:00", "closes": "22:00" },
     { "@type": "OpeningHoursSpecification", "dayOfWeek": "Thursday", "opens": "11:00", "closes": "23:00" },
@@ -1508,7 +1508,7 @@ dialog::backdrop { background: rgba(8,11,11,.6); backdrop-filter: blur(3px); }
       <div>
         <img class="foot__logo" src="assets/logo.png" alt="Sigla La Melania &amp; Ayan Snackbar" width="150" height="128" decoding="async" loading="lazy">
         <span class="brand__name" style="font-size:1.5rem;margin-top:.9rem">La Melania &amp; Ayan</span>
-        <p class="lede" style="font-size:var(--t-sm);margin-top:.7rem;max-width:34ch">Snackbar onest, în mijlocul Videlelor. Chips, popcorn, cafea și mâncare gătită la comandă.</p>
+        <p class="lede" style="font-size:var(--t-sm);margin-top:.7rem;max-width:34ch">Snackbar onest, în mijlocul Videlelor. Cafea, băuturi și gustări la tejghea deschisă.</p>
       </div>
       <div>
         <h4>Navigare</h4>
@@ -1534,8 +1534,8 @@ dialog::backdrop { background: rgba(8,11,11,.6); backdrop-filter: blur(3px); }
         <p class="foot__co">MELANIA &amp; AYAN SNACK S.R.L.
 CUI: RO 45872190
 Nr. Reg. Com.: J34/512/2023
-Str. Republicii nr. 18, Videle, jud. Teleorman
-salut@melaniasiayan.ro · +40 21 555 0100</p>
+Str. Băncii nr. 4, Videle, jud. Teleorman, 145300
+melanysolution2016@yahoo.com · +40 751 778 967</p>
         <p class="anpc-note">Date fictive, marcate ca exemplu. Înlocuiește-le cu datele reale ale firmei înainte de a merge live.</p>
       </div>
     </div>
@@ -1666,7 +1666,11 @@ let CATEGORII = [
   { id: "blended-scotch", nume: "Blended Scotch" },
   { id: "single-malt-scotch", nume: "Single Malt Scotch" },
   { id: "long-drink", nume: "Long Drink" },
-  { id: "limonade-smoothie", nume: "Limonade ~ Smoothie" }
+  { id: "limonade-smoothie", nume: "Limonade ~ Smoothie" },
+  { id: "snackuri-gustari", nume: "Snackuri ~ Gustări" },
+  { id: "diverse-extra", nume: "Diverse ~ Extra" },
+  { id: "adaosuri-cafea", nume: "Adaosuri Cafea" },
+  { id: "jocuri-societate", nume: "Jocuri de Societate" }
 ];
 
 let PRODUSE = [
@@ -1748,6 +1752,25 @@ let PRODUSE = [
   { id: "limonade-smoothie-limonada-naturala-clasica", cat: "limonade-smoothie", nume: "Limonadă Naturală Clasică", cantitate: "500ml", descriere: "Lămâi stoarse pe loc, cu sirop de zahăr și apă plată — limonada clasică.", kcal: 38, proteine: 0.1, carbohidrati: 9.5, grasimi: 0, pret: 25, pretRedus: 12, hue: 75, etichete: [] },
   { id: "limonade-smoothie-limonada-popping-boba", cat: "limonade-smoothie", nume: "Limonadă Popping Boba", cantitate: "500ml", descriere: "Limonadă naturală cu perle popping boba, la alegere din mai multe siropuri.", kcal: 55, proteine: 0.1, carbohidrati: 14, grasimi: 0, pret: 30, pretRedus: 15, hue: 82, etichete: [] },
   { id: "limonade-smoothie-smoothie-fruit-mix-cu-suc-natural-de-mere", cat: "limonade-smoothie", nume: "Smoothie Fruit Mix cu Suc Natural de Mere", cantitate: "500ml", descriere: "Smoothie din fructe amestecate, pe bază de suc natural de mere.", kcal: 50, proteine: 0.4, carbohidrati: 12, grasimi: 0.2, pret: 40, pretRedus: 15, hue: 89, etichete: [] },
+  { id: "snackuri-gustari-fistic-prajit-sarat", cat: "snackuri-gustari", nume: "Fistic Prăjit și Sărat", cantitate: "250g", descriere: "Fistic prăjit, sărat exact cât trebuie — bol generos pentru împărțit la masă.", kcal: 1405, proteine: 50, carbohidrati: 70, grasimi: 112, pret: 50, pretRedus: 25, hue: 42, etichete: [] },
+  { id: "snackuri-gustari-arahide-prajite-sarate", cat: "snackuri-gustari", nume: "Arahide Prăjite și Sărate", cantitate: "250g", descriere: "Arahide crocante, prăjite și sărate, gata de împărțit.", kcal: 1463, proteine: 60, carbohidrati: 52, grasimi: 125, pret: 25, pretRedus: 12.5, hue: 46, etichete: [] },
+  { id: "snackuri-gustari-popcorn-sare", cat: "snackuri-gustari", nume: "Popcorn Sare", cantitate: "100g", descriere: "Popcorn proaspăt, sărat clasic.", kcal: 480, proteine: 9, carbohidrati: 58, grasimi: 24, pret: 14, pretRedus: 7, hue: 50, etichete: [] },
+  { id: "snackuri-gustari-popcorn-unt", cat: "snackuri-gustari", nume: "Popcorn Unt", cantitate: "100g", descriere: "Popcorn cu aromă de unt, moale-crocant.", kcal: 500, proteine: 8, carbohidrati: 55, grasimi: 28, pret: 14, pretRedus: 7, hue: 54, etichete: [] },
+  { id: "snackuri-gustari-popcorn-cascaval", cat: "snackuri-gustari", nume: "Popcorn Cașcaval", cantitate: "100g", descriere: "Popcorn cu praf de cașcaval, sărat-picant pe alocuri.", kcal: 510, proteine: 9, carbohidrati: 52, grasimi: 30, pret: 14, pretRedus: 7, hue: 58, etichete: [] },
+  { id: "snackuri-gustari-saratele-cascaval", cat: "snackuri-gustari", nume: "Sărățele cu Cașcaval", cantitate: "110g", descriere: "Bețișoare sărate cu cașcaval, crocante.", kcal: 495, proteine: 11, carbohidrati: 66, grasimi: 20, pret: 14, pretRedus: 7, hue: 62, etichete: [] },
+  { id: "snackuri-gustari-masline-negre-sarate", cat: "snackuri-gustari", nume: "Măsline Negre Sărate", cantitate: "100g", descriere: "Măsline negre, sărate, bune lângă orice băutură.", kcal: 115, proteine: 0.8, carbohidrati: 6, grasimi: 11, pret: 14, pretRedus: 7, hue: 285, etichete: [] },
+  { id: "diverse-extra-lamaie-feliata", cat: "diverse-extra", nume: "Lămâie Feliată", cantitate: "100g", descriere: "Felii proaspete de lămâie, pentru băutura ta.", kcal: 29, proteine: 1.1, carbohidrati: 9, grasimi: 0.3, pret: 8, pretRedus: 3, hue: 55, etichete: [] },
+  { id: "diverse-extra-lime-feliat", cat: "diverse-extra", nume: "Lime Feliat", cantitate: "100g", descriere: "Felii proaspete de lime, pentru băutura ta.", kcal: 30, proteine: 0.7, carbohidrati: 11, grasimi: 0.2, pret: 8, pretRedus: 3, hue: 95, etichete: [] },
+  { id: "diverse-extra-portocala-feliata", cat: "diverse-extra", nume: "Portocală Feliată", cantitate: "100g", descriere: "Felii proaspete de portocală.", kcal: 47, proteine: 0.9, carbohidrati: 12, grasimi: 0.1, pret: 8, pretRedus: 3, hue: 30, etichete: [] },
+  { id: "diverse-extra-miere-poliflora-plicuri", cat: "diverse-extra", nume: "Miere Poliflora, Plicuri", cantitate: "1 plic", descriere: "Plic individual de miere poliflora, pentru ceai sau cafea.", kcal: 46, proteine: 0, carbohidrati: 12.5, grasimi: 0, pret: 5, pretRedus: 2, hue: 40, etichete: [] },
+  { id: "diverse-extra-gheata-frapiera-mica", cat: "diverse-extra", nume: "Gheață, Frapieră Mică", cantitate: "250g", descriere: "Frapieră mică de gheață, pentru masă.", kcal: 0, proteine: 0, carbohidrati: 0, grasimi: 0, pret: 12, pretRedus: 5, hue: 195, etichete: [] },
+  { id: "jocuri-societate-jocuri-de-societate", cat: "jocuri-societate", nume: "Jocuri de Societate", cantitate: "1 oră", descriere: "Table, șah, rummy sau cărți, la masa ta. Gratuit la comenzi de peste 200 de lei.", kcal: 0, proteine: 0, carbohidrati: 0, grasimi: 0, pret: 25, pretRedus: 10, hue: 265, etichete: [] },
+  { id: "adaosuri-cafea-lapte-uht", cat: "adaosuri-cafea", nume: "Lapte UHT", cantitate: "porție", descriere: "Adaos de lapte UHT pentru cafeaua ta.", kcal: 20, proteine: 1, carbohidrati: 1.5, grasimi: 1, pret: 2, pretRedus: 1, hue: 15, etichete: [] },
+  { id: "adaosuri-cafea-lapte-condensat", cat: "adaosuri-cafea", nume: "Lapte Condensat", cantitate: "porție", descriere: "Adaos de lapte condensat pentru cafeaua ta.", kcal: 50, proteine: 1, carbohidrati: 8, grasimi: 1.5, pret: 2, pretRedus: 1, hue: 20, etichete: [] },
+  { id: "adaosuri-cafea-sirop-vanilie", cat: "adaosuri-cafea", nume: "Sirop Vanilie", cantitate: "porție", descriere: "Adaos de sirop de vanilie pentru cafeaua ta.", kcal: 80, proteine: 0, carbohidrati: 20, grasimi: 0, pret: 4, pretRedus: 2, hue: 45, etichete: [] },
+  { id: "adaosuri-cafea-sirop-caramel", cat: "adaosuri-cafea", nume: "Sirop Caramel", cantitate: "porție", descriere: "Adaos de sirop de caramel pentru cafeaua ta.", kcal: 80, proteine: 0, carbohidrati: 20, grasimi: 0, pret: 4, pretRedus: 2, hue: 25, etichete: [] },
+  { id: "adaosuri-cafea-sirop-ciocolata", cat: "adaosuri-cafea", nume: "Sirop Ciocolată", cantitate: "porție", descriere: "Adaos de sirop de ciocolată pentru cafeaua ta.", kcal: 80, proteine: 0, carbohidrati: 20, grasimi: 0, pret: 4, pretRedus: 2, hue: 10, etichete: [] },
+  { id: "adaosuri-cafea-frisca", cat: "adaosuri-cafea", nume: "Frișcă", cantitate: "porție", descriere: "Adaos de frișcă pentru cafeaua ta.", kcal: 65, proteine: 0.5, carbohidrati: 2, grasimi: 6, pret: 4, pretRedus: 2, hue: 350, etichete: [] },
 ];
 
   /* Prețul afișat/folosit în tot restul codului (`pret`) devine cel redus; `pretNormal`
@@ -2015,12 +2038,12 @@ let PRODUSE = [
 /* ---------- Documente legale ---------- */
   const TERMENI = [
     ["1. Cine suntem (operatorul)", "Site-ul, comanda online, livrarea și rezervările sunt operate de MELANIA &amp; AYAN SNACK S.R.L. („La Melania &amp; Ayan”, „noi”). Datele complete de identificare — denumire, CUI, număr de înregistrare la Registrul Comerțului, sediu, e-mail și telefon — sunt afișate în blocul de contact din subsolul site-ului. Pentru orice sesizare, ne scrii la adresa de e-mail de acolo sau ne suni. Ne place să vorbim direct."],
-    ["2. Obiectul", "Acești termeni reglementează folosirea site-ului, plasarea comenzilor de mâncare și băutură pentru livrare sau ridicare, precum și rezervările de masă. Prin plasarea unei comenzi, confirmi că ai citit și accepți aceste condiții. Dacă ceva nu îți este clar, întreabă-ne înainte să comanzi — e mai simplu așa."],
-    ["3. Comenzi și prețuri", "Prețurile sunt afișate în lei și includ TVA. Fiecare preparat își arată caloriile și macronutrienții — face parte din felul în care lucrăm. Comanda devine fermă în momentul în care primești confirmarea din partea noastră. Putem refuza sau anula o comandă dacă un produs s-a epuizat, dacă un preț a fost afișat vădit greșit sau dacă nu putem livra la adresa dată; în aceste cazuri te anunțăm și îți returnăm integral orice sumă plătită."],
-    ["4. Livrare și ridicare", "Livrăm în zonele și în intervalul orar afișate la finalizarea comenzii. Costul livrării, dacă există, apare pe bon înainte de plată — nicio surpriză la ultima linie. Pentru ridicare, îți spunem ora la care comanda e gata la tejghea. Timpii sunt estimativi și pot varia în funcție de trafic și de numărul de comenzi; gătim la comandă, așa că uneori mai durează un minut în plus."],
+    ["2. Obiectul", "Acești termeni reglementează folosirea site-ului, plasarea comenzilor de băuturi și gustări pentru livrare sau ridicare, precum și rezervările de masă. Prin plasarea unei comenzi, confirmi că ai citit și accepți aceste condiții. Dacă ceva nu îți este clar, întreabă-ne înainte să comanzi — e mai simplu așa."],
+    ["3. Comenzi și prețuri", "Prețurile sunt afișate în lei și includ TVA. Fiecare produs își arată caloriile și macronutrienții — face parte din felul în care lucrăm. Comanda devine fermă în momentul în care primești confirmarea din partea noastră. Putem refuza sau anula o comandă dacă un produs s-a epuizat, dacă un preț a fost afișat vădit greșit sau dacă nu putem livra la adresa dată; în aceste cazuri te anunțăm și îți returnăm integral orice sumă plătită."],
+    ["4. Livrare și ridicare", "Livrăm în zonele și în intervalul orar afișate la finalizarea comenzii. Costul livrării, dacă există, apare pe bon înainte de plată — nicio surpriză la ultima linie. Pentru ridicare, îți spunem ora la care comanda e gata la tejghea. Timpii sunt estimativi și pot varia în funcție de trafic și de numărul de comenzi; pregătim comanda la tejghea, așa că uneori mai durează un minut în plus."],
     ["5. Plata", "Poți plăti online, cu cardul, prin procesatorul afișat la finalizarea comenzii, sau la livrare ori ridicare, prin metodele indicate acolo. Nu stocăm datele complete ale cardului — ele sunt procesate direct de furnizorul de plăți, în mediu securizat. Fiecare comandă e însoțită de bon fiscal."],
-    ["6. Dreptul de retragere și excepția pentru mâncare", "La comenzile online, legea prevede în general un drept de retragere de 14 zile. Acesta NU se aplică însă mâncării și băuturii pe care le pregătim: preparatele gătite la comandă și produsele proaspete, perisabile, sunt exceptate expres de la retragere, conform art. 16 lit. c) (produse personalizate / făcute după cererea ta) și lit. d) (produse care se pot deteriora sau perima rapid) din O.U.G. nr. 34/2014. Pe scurt: o porție gătită nu poate fi returnată și rambursată pentru că te-ai răzgândit. Dacă însă primești un produs greșit, incomplet sau neconform, ai toate drepturile legale — vezi secțiunea de reclamații."],
-    ["7. Alergeni", "Multe preparate conțin sau pot conține alergeni dintre cei 14 reglementați de Regulamentul (UE) nr. 1169/2011 (cereale cu gluten, crustacee, ouă, pește, arahide, soia, lapte, fructe cu coajă, țelină, muștar, susan, dioxid de sulf și sulfiți, lupin, moluște). Informația despre alergeni este disponibilă la fiecare produs și, la cerere, la tejghea. Gătim într-o bucătărie deschisă în care se folosesc acești alergeni, așa că nu putem exclude complet contaminarea încrucișată. Dacă ai o alergie, spune-ne înainte să comanzi."],
+    ["6. Dreptul de retragere și excepția pentru produse perisabile", "La comenzile online, legea prevede în general un drept de retragere de 14 zile. Acesta NU se aplică însă băuturilor și gustărilor pregătite la comandă: produsele preparate după cererea ta (cocktailuri, limonade, cafea) și produsele proaspete, perisabile, sunt exceptate expres de la retragere, conform art. 16 lit. c) (produse personalizate / făcute după cererea ta) și lit. d) (produse care se pot deteriora sau perima rapid) din O.U.G. nr. 34/2014. Pe scurt: o băutură pregătită nu poate fi returnată și rambursată pentru că te-ai răzgândit. Dacă însă primești un produs greșit, incomplet sau neconform, ai toate drepturile legale — vezi secțiunea de reclamații."],
+    ["7. Alergeni", "Multe produse conțin sau pot conține alergeni dintre cei 14 reglementați de Regulamentul (UE) nr. 1169/2011 (cereale cu gluten, crustacee, ouă, pește, arahide, soia, lapte, fructe cu coajă, țelină, muștar, susan, dioxid de sulf și sulfiți, lupin, moluște). Informația despre alergeni este disponibilă la fiecare produs și, la cerere, la tejghea. Pregătim comenzile la o tejghea deschisă în care se folosesc acești alergeni, așa că nu putem exclude complet contaminarea încrucișată. Dacă ai o alergie, spune-ne înainte să comanzi."],
     ["8. Reclamații", "Dacă ceva nu e în regulă, scrie-ne la adresa de e-mail din subsol sau sună-ne. Spune-ne numărul comenzii de pe bon și ce s-a întâmplat. Răspundem în cel mult 30 de zile, de obicei mult mai repede, și căutăm o soluție corectă — înlocuire, remediere sau returnarea sumei, după caz. Poți apela și la mecanismele de la secțiunea ANPC."],
     ["9. Răspundere și legea aplicabilă", "Răspundem pentru conformitatea produselor potrivit legii. Nu răspundem pentru întârzieri cauzate de situații independente de noi (trafic, vreme, date de contact greșite sau incomplete). Acestor termeni li se aplică legea română. Eventualele neînțelegeri le rezolvăm întâi pe cale amiabilă; dacă nu reușim, competente sunt instanțele din România. Pentru soluționarea alternativă a litigiilor, vezi secțiunea ANPC."]
   ];
