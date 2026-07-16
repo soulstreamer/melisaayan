@@ -369,13 +369,19 @@ a { color: inherit; }
 }
 .intro__vibe {
   font-family: var(--font-body);
-  font-size: 12px;
+  font-size: 10.5px;
   line-height: 1.5;
   color: var(--night-mut);
-  max-width: 32ch;
+  max-width: 42ch;
   text-align: center;
   opacity: 0;
   animation: fadeIn 560ms ease 2150ms forwards;
+}
+@media (max-height: 640px) {
+  .intro__inner { gap: .8rem; padding: 1rem; }
+  .intro__svg { width: min(38vw, 170px); }
+  .intro__logo { width: min(36vw, 150px); }
+  .intro__vibe { font-size: 9.5px; max-width: 46ch; }
 }
 
 /* Sigla e artă neagră pe transparent: pe fundal închis o inversăm. */
@@ -1136,8 +1142,12 @@ dialog::backdrop { background: rgba(8,11,11,.6); backdrop-filter: blur(3px); }
   .form__row { grid-template-columns: 1fr; }
   .macros { grid-template-columns: repeat(2, 1fr); }
   .totop { display: none; }
-  .qr__device { flex-direction: column; }
+  .qr__device { flex-direction: row; flex-wrap: nowrap; gap: clamp(.5rem, 2.4vw, .9rem); }
+  .hero__qr .phone { width: min(150px, 40vw); }
+  .hero__qr .qrcard { width: min(112px, 30vw); padding: .55rem; gap: .35rem; }
   .qrcard { transform: none; }
+  .qrcard__label { font-size: 11px; }
+  .qrcard__sub { font-size: 8px; }
 }
 @media (max-width: 560px) {
   .bon { width: 100vw; height: 92dvh; margin: auto 0 0; border-radius: var(--r-lg) var(--r-lg) 0 0; animation: sheetUp 380ms var(--ease); }
@@ -1479,7 +1489,7 @@ dialog::backdrop { background: rgba(8,11,11,.6); backdrop-filter: blur(3px); }
     </svg>
     <img class="intro__logo" src="assets/logo.png" alt="La Melania &amp; Ayan Snackbar" width="240" height="204" decoding="async">
     <p class="intro__sub">Snackbar · Videle</p>
-    <p class="intro__vibe">Locul unde te relaxezi, socializezi și te simți ca acasă — cu vitrinele mereu pline de băuturi reci și diversificate.</p>
+    <p class="intro__vibe">Locul unde vii să te relaxezi, să socializezi, să-ți faci prieteni noi și să te simți ca acasă — până devii „omul nostru de casă". Vitrinele stau mereu pline cu băuturi diverse, reci ca gheața, cu câte o surpriză din când în când. Vino și nu vei regreta.</p>
   </div>
   <button class="intro__skip" type="button" id="skipIntro">Sari peste intro</button>
 </div>
@@ -2921,7 +2931,7 @@ let PRODUSE = [
       setTimeout(() => { el.remove(); dupaIntro(); }, 900);
     };
     const esc = (e) => { if (e.key === "Escape") { clearTimeout(t); termina(); } };
-    const t = setTimeout(termina, 3400);
+    const t = setTimeout(termina, 4600);
     $("#skipIntro").addEventListener("click", () => { clearTimeout(t); termina(); });
     document.addEventListener("keydown", esc);
     curataEsc = () => document.removeEventListener("keydown", esc);
