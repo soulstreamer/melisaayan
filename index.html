@@ -1686,6 +1686,18 @@ dialog::backdrop { background: rgba(8,11,11,.6); backdrop-filter: blur(3px); }
     </div>
   </section>
 
+  <!-- ============ HAPPY HOUR ACUM (produse) ============ -->
+  <section class="sec sec--tight" id="happyhourMenu" aria-labelledby="happyhourMenuTitle" hidden>
+    <div class="shell">
+      <div class="sec__head reveal">
+        <p class="eyebrow">Happy Hour · Activ acum</p>
+        <h2 id="happyhourMenuTitle">Pachetele Happy Hour, disponibile chiar acum</h2>
+        <p class="lede">08:00–12:00, ora României, pentru membri ai programului de fidelizare, elevi/studenți (16+), pensionari și angajați din saloane de înfrumusețare.</p>
+      </div>
+      <div class="grid" id="happyHourGrid"></div>
+    </div>
+  </section>
+
   <!-- ============ MENIU ============ -->
   <section class="sec" id="meniu" aria-labelledby="meniuTitle">
     <div class="shell">
@@ -1693,7 +1705,7 @@ dialog::backdrop { background: rgba(8,11,11,.6); backdrop-filter: blur(3px); }
         <div class="sec__head reveal" style="margin-bottom:0">
           <p class="eyebrow">Meniu</p>
           <h2 id="meniuTitle">Tot ce servim la tejghea</h2>
-          <p class="lede">97 de produse — cafea și ceaiuri, băuturi reci, ape și sucuri, bere, vinuri, un raft întreg de spirtoase, gustări și jocuri de societate. Fiecare produs își arată cantitatea, fără surprize la bon.</p>
+          <p class="lede">105 produse — pachete Happy Hour, cafea și ceaiuri, băuturi reci, ape și sucuri, bere, vinuri, un raft întreg de spirtoase, gustări și jocuri de societate. Fiecare produs își arată cantitatea, fără surprize la bon.</p>
         </div>
         <figure class="figure menu__figure reveal">
           <img src="assets/hh1.jpg" alt="Cești de espresso și o pungă de covrigei pe tejgheaua de lemn." decoding="async" loading="lazy">
@@ -2089,11 +2101,8 @@ dialog::backdrop { background: rgba(8,11,11,.6); backdrop-filter: blur(3px); }
       <div>
         <h4>Date de firmă</h4>
         <p class="foot__co">MELANIA &amp; AYAN SNACK S.R.L.
-CUI: RO 45872190
-Nr. Reg. Com.: J34/512/2023
 Str. Băncii nr. 4, Videle, jud. Teleorman, 145300
 melanysolution2016@yahoo.com · +40 751 778 967</p>
-        <p class="anpc-note">Date fictive, marcate ca exemplu. Înlocuiește-le cu datele reale ale firmei înainte de a merge live.</p>
       </div>
     </div>
     <div class="foot__bar">
@@ -2183,6 +2192,7 @@ melanysolution2016@yahoo.com · +40 751 778 967</p>
 "use strict";
 
 let CATEGORII = [
+  { id: "happy-hour", nume: "Happy Hour" },
   { id: "cafea-ceai", nume: "Cafea ~ Ceai" },
   { id: "reci-cafea", nume: "Băuturi Reci de Cafea" },
   { id: "ape-sucuri", nume: "Ape ~ Sucuri" },
@@ -2209,6 +2219,14 @@ let CATEGORII = [
 /* pretRedus = prețul redus din meniul corectat (folosit doar de pagina QR, meniu-qr.html —
    pe acest site prețul afișat/folosit la coș e mereu `pret`, cel normal). */
 let PRODUSE = [
+  { id: "happy-hour-espresso-apa", cat: "happy-hour", nume: "Espresso + Apă Plată/Minerală", cantitate: "80ml + 500ml", descriere: "Pachet Happy Hour, 08:00–12:00, pentru membri ai programului de fidelizare, elevi/studenți (16+), pensionari și angajați din saloane de înfrumusețare.", kcal: 9, proteine: 0.5, carbohidrati: 0.8, grasimi: 0.2, pret: 20, pretRedus: 9, hue: 200, etichete: ["Happy Hour"] },
+  { id: "happy-hour-espresso-cola", cat: "happy-hour", nume: "Espresso + Coca-Cola/Fanta/Sprite", cantitate: "80ml + Doză", descriere: "Pachet Happy Hour, 08:00–12:00, pentru membri ai programului de fidelizare, elevi/studenți (16+), pensionari și angajați din saloane de înfrumusețare.", kcal: 51, proteine: 0.5, carbohidrati: 11.4, grasimi: 0.2, pret: 24, pretRedus: 12, hue: 205, etichete: ["Happy Hour"] },
+  { id: "happy-hour-espresso-hell", cat: "happy-hour", nume: "Espresso + Energizant Hell", cantitate: "80ml + 250ml", descriere: "Pachet Happy Hour, 08:00–12:00, pentru membri ai programului de fidelizare, elevi/studenți (16+), pensionari și angajați din saloane de înfrumusețare. Doar persoanelor peste 18 ani.", kcal: 54, proteine: 0.5, carbohidrati: 11.8, grasimi: 0.2, pret: 24, pretRedus: 10, hue: 210, varsta18: true, etichete: ["Happy Hour", "18+"] },
+  { id: "happy-hour-espresso-limonada", cat: "happy-hour", nume: "Espresso + Limonadă Naturală", cantitate: "80ml + 500ml", descriere: "Pachet Happy Hour, 08:00–12:00, pentru membri ai programului de fidelizare, elevi/studenți (16+), pensionari și angajați din saloane de înfrumusețare.", kcal: 47, proteine: 0.6, carbohidrati: 10.3, grasimi: 0.2, pret: 35, pretRedus: 15, hue: 215, etichete: ["Happy Hour"] },
+  { id: "happy-hour-cappuccino-apa", cat: "happy-hour", nume: "Cappuccino + Apă Plată/Minerală", cantitate: "240ml + 500ml", descriere: "Pachet Happy Hour, 08:00–12:00, pentru membri ai programului de fidelizare, elevi/studenți (16+), pensionari și angajați din saloane de înfrumusețare.", kcal: 40, proteine: 2.1, carbohidrati: 3.6, grasimi: 2.1, pret: 24, pretRedus: 11, hue: 220, etichete: ["Happy Hour"] },
+  { id: "happy-hour-cappuccino-cola", cat: "happy-hour", nume: "Cappuccino + Coca-Cola/Fanta/Sprite", cantitate: "240ml + Doză", descriere: "Pachet Happy Hour, 08:00–12:00, pentru membri ai programului de fidelizare, elevi/studenți (16+), pensionari și angajați din saloane de înfrumusețare.", kcal: 82, proteine: 2.1, carbohidrati: 14.2, grasimi: 2.1, pret: 28, pretRedus: 14, hue: 225, etichete: ["Happy Hour"] },
+  { id: "happy-hour-cappuccino-hell", cat: "happy-hour", nume: "Cappuccino + Energizant Hell", cantitate: "240ml + 250ml", descriere: "Pachet Happy Hour, 08:00–12:00, pentru membri ai programului de fidelizare, elevi/studenți (16+), pensionari și angajați din saloane de înfrumusețare. Doar persoanelor peste 18 ani.", kcal: 85, proteine: 2.1, carbohidrati: 14.6, grasimi: 2.1, pret: 28, pretRedus: 12, hue: 230, varsta18: true, etichete: ["Happy Hour", "18+"] },
+  { id: "happy-hour-cappuccino-limonada", cat: "happy-hour", nume: "Cappuccino + Limonadă Naturală", cantitate: "240ml + 500ml", descriere: "Pachet Happy Hour, 08:00–12:00, pentru membri ai programului de fidelizare, elevi/studenți (16+), pensionari și angajați din saloane de înfrumusețare.", kcal: 78, proteine: 2.2, carbohidrati: 13.1, grasimi: 2.1, pret: 39, pretRedus: 17, hue: 235, etichete: ["Happy Hour"] },
   { id: "cafea-ceai-espresso-scurt", cat: "cafea-ceai", nume: "Espresso Scurt", cantitate: "80ml", descriere: "Un shot scurt și concentrat, extras din boabe proaspăt măcinate, cu o cremă groasă deasupra.", kcal: 9, proteine: 0.5, carbohidrati: 0.8, grasimi: 0.2, pret: 10, pretRedus: 5, hue: 18, etichete: [] },
   { id: "cafea-ceai-espresso-lung", cat: "cafea-ceai", nume: "Espresso Lung", cantitate: "180ml", descriere: "Aceeași extracție, cu mai multă apă — mai lung la gust, mai ușor de băut pe îndelete.", kcal: 6, proteine: 0.4, carbohidrati: 0.6, grasimi: 0.1, pret: 10, pretRedus: 5, hue: 25, etichete: [] },
   { id: "cafea-ceai-espresso-macchiatto", cat: "cafea-ceai", nume: "Espresso Macchiatto", cantitate: "90ml", descriere: "Espresso „pătat” cu puțină spumă de lapte, exact cât să-i rotunjească asprimea.", kcal: 15, proteine: 0.9, carbohidrati: 1.2, grasimi: 0.6, pret: 12, pretRedus: 6, hue: 32, etichete: [] },
@@ -2515,6 +2533,13 @@ let PRODUSE = [
     $$(".card", gridEl).forEach(observaReveal);
   }
 
+  function renderHappyHourGrid() {
+    const el = $("#happyHourGrid");
+    if (!el) return;
+    el.innerHTML = PRODUSE.filter((p) => p.cat === "happy-hour").map(cardHTML).join("");
+    $$(".card", el).forEach(observaReveal);
+  }
+
   /* ---------- Bon ---------- */
   const bonEl = $("#bon"), bonBody = $("#bonBody"), bonFoot = $("#bonFoot");
 
@@ -2658,7 +2683,7 @@ let PRODUSE = [
 
   /* ---------- Documente legale ---------- */
   const TERMENI = [
-    ["1. Cine suntem (operatorul)", "Site-ul, comanda online, livrarea și rezervările sunt operate de MELANIA &amp; AYAN SNACK S.R.L. („La Melania &amp; Ayan”, „noi”). Datele complete de identificare — denumire, CUI, număr de înregistrare la Registrul Comerțului, sediu, e-mail și telefon — sunt afișate în blocul de contact din subsolul site-ului. Pentru orice sesizare, ne scrii la adresa de e-mail de acolo sau ne suni. Ne place să vorbim direct."],
+    ["1. Cine suntem (operatorul)", "Site-ul, comanda online, livrarea și rezervările sunt operate de MELANIA &amp; AYAN SNACK S.R.L. („La Melania &amp; Ayan”, „noi”). Datele de identificare — denumire, sediu, e-mail și telefon — sunt afișate în blocul de contact din subsolul site-ului. Pentru orice sesizare, ne scrii la adresa de e-mail de acolo sau ne suni. Ne place să vorbim direct."],
     ["2. Obiectul", "Acești termeni reglementează folosirea site-ului, plasarea comenzilor de băuturi și gustări pentru livrare sau ridicare, precum și rezervările de masă. Prin plasarea unei comenzi, confirmi că ai citit și accepți aceste condiții. Dacă ceva nu îți este clar, întreabă-ne înainte să comanzi — e mai simplu așa."],
     ["3. Comenzi și prețuri", "Prețurile sunt afișate în lei și includ TVA. Fiecare produs își arată caloriile și macronutrienții — face parte din felul în care lucrăm. Comanda devine fermă în momentul în care primești confirmarea din partea noastră. Putem refuza sau anula o comandă dacă un produs s-a epuizat, dacă un preț a fost afișat vădit greșit sau dacă nu putem livra la adresa dată; în aceste cazuri te anunțăm și îți returnăm integral orice sumă plătită."],
     ["4. Livrare și ridicare", "Livrăm în zonele și în intervalul orar afișate la finalizarea comenzii. Costul livrării, dacă există, apare pe bon înainte de plată — nicio surpriză la ultima linie. Pentru ridicare, îți spunem ora la care comanda e gata la tejghea. Timpii sunt estimativi și pot varia în funcție de trafic și de numărul de comenzi; pregătim comanda la tejghea, așa că uneori mai durează un minut în plus."],
@@ -2742,8 +2767,22 @@ let PRODUSE = [
   const H = { 1: [660, 1320], 2: [660, 1320], 3: [660, 1320], 4: [660, 1380], 5: [660, 60], 6: [720, 60], 0: [720, 1320] };
   const hhmm = (m) => String(Math.floor((m % 1440) / 60)).padStart(2, "0") + ":" + String(m % 60).padStart(2, "0");
 
-  function stare(now) {
-    const d = now.getDay(), m = now.getHours() * 60 + now.getMinutes();
+  /* Ora reală din România (Europe/Bucharest), indiferent de fusul orar al
+     dispozitivului vizitatorului — nu ceasul local al browserului. */
+  const RO_TZ = "Europe/Bucharest";
+  const ZILE_RO = { Sun: 0, Mon: 1, Tue: 2, Wed: 3, Thu: 4, Fri: 5, Sat: 6 };
+  function acumRomania() {
+    const parts = new Intl.DateTimeFormat("en-US", {
+      timeZone: RO_TZ, weekday: "short", hour: "2-digit", minute: "2-digit", hour12: false
+    }).formatToParts(new Date());
+    const get = (t) => parts.find((p) => p.type === t).value;
+    let h = Number(get("hour"));
+    if (h === 24) h = 0;
+    return { ziua: ZILE_RO[get("weekday")], minute: h * 60 + Number(get("minute")) };
+  }
+
+  function stare(acum) {
+    const d = acum.ziua, m = acum.minute;
     const azi = H[d], ieri = H[(d + 6) % 7];
     if (ieri[1] < ieri[0] && m < ieri[1]) return { open: true, inchideLa: ieri[1] };
     if (m >= azi[0]) {
@@ -2755,13 +2794,12 @@ let PRODUSE = [
   }
 
   function renderStare() {
-    const now = new Date();
-    const s = stare(now);
+    const acum = acumRomania();
+    const s = stare(acum);
     const el = $("#status"), txt = $("#statusText");
     el.classList.remove("is-open", "is-soon");
     if (s.open) {
-      const m = now.getHours() * 60 + now.getMinutes();
-      const ramase = s.inchideLa - m;
+      const ramase = s.inchideLa - acum.minute;
       el.classList.add("is-open");
       if (ramase <= 60) { el.classList.add("is-soon"); txt.textContent = "Se închide în " + ramase + " min"; }
       else txt.textContent = "Deschis acum";
@@ -2769,19 +2807,22 @@ let PRODUSE = [
       txt.textContent = "Închis · Se deschide la " + hhmm(s.deschideLa);
     }
     $$("#hoursTable tbody tr").forEach((tr) =>
-      tr.classList.toggle("is-today", Number(tr.dataset.day) === now.getDay()));
+      tr.classList.toggle("is-today", Number(tr.dataset.day) === acum.ziua));
   }
 
-  /* Care fereastră de Happy Hour e activă acum — o singură fereastră reală, 08:00–12:00. */
+  /* Fereastra reală de Happy Hour, 08:00–12:00, ora României. */
   const HH_SLOTS = { activ: [480, 720] };
+  function inHappyHour() {
+    const m = acumRomania().minute;
+    return m >= HH_SLOTS.activ[0] && m < HH_SLOTS.activ[1];
+  }
   function renderHappyHour() {
-    const now = new Date();
-    const m = now.getHours() * 60 + now.getMinutes();
+    const activ = inHappyHour();
     $$(".hh__card").forEach((el) => {
-      const s = HH_SLOTS[el.dataset.slot];
-      if (!s) return;
-      el.classList.toggle("is-now", m >= s[0] && m < s[1]);
+      if (el.dataset.slot === "activ") el.classList.toggle("is-now", activ);
     });
+    const sec = $("#happyhourMenu");
+    if (sec) sec.hidden = !activ;
   }
 
   /* ---------- Stele ---------- */
@@ -3216,6 +3257,7 @@ let PRODUSE = [
       PRODUSE = data.categories.flatMap((c) => (c.products || []).map(mapeazaProdusPOS));
       renderFiltre();
       renderGrila();
+      renderHappyHourGrid();
     } catch (e) {
       /* POS indisponibil — rămâne meniul static afișat deja */
     }
@@ -3234,6 +3276,7 @@ let PRODUSE = [
   renderIcons();
   renderFiltre();
   renderGrila();
+  renderHappyHourGrid();
   renderBon();
   renderStare();
   renderHappyHour();

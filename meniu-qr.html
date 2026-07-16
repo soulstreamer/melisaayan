@@ -1532,11 +1532,8 @@ dialog::backdrop { background: rgba(8,11,11,.6); backdrop-filter: blur(3px); }
       <div>
         <h4>Date de firmă</h4>
         <p class="foot__co">MELANIA &amp; AYAN SNACK S.R.L.
-CUI: RO 45872190
-Nr. Reg. Com.: J34/512/2023
 Str. Băncii nr. 4, Videle, jud. Teleorman, 145300
 melanysolution2016@yahoo.com · +40 751 778 967</p>
-        <p class="anpc-note">Date fictive, marcate ca exemplu. Înlocuiește-le cu datele reale ale firmei înainte de a merge live.</p>
       </div>
     </div>
     <div class="foot__bar">
@@ -1650,6 +1647,7 @@ melanysolution2016@yahoo.com · +40 751 778 967</p>
   let cos = [];
 
 let CATEGORII = [
+  { id: "happy-hour", nume: "Happy Hour" },
   { id: "cafea-ceai", nume: "Cafea ~ Ceai" },
   { id: "reci-cafea", nume: "Băuturi Reci de Cafea" },
   { id: "ape-sucuri", nume: "Ape ~ Sucuri" },
@@ -1674,6 +1672,14 @@ let CATEGORII = [
 ];
 
 let PRODUSE = [
+  { id: "happy-hour-espresso-apa", cat: "happy-hour", nume: "Espresso + Apă Plată/Minerală", cantitate: "80ml + 500ml", descriere: "Pachet Happy Hour, 08:00–12:00, pentru membri ai programului de fidelizare, elevi/studenți (16+), pensionari și angajați din saloane de înfrumusețare.", kcal: 9, proteine: 0.5, carbohidrati: 0.8, grasimi: 0.2, pret: 20, pretRedus: 9, hue: 200, etichete: ["Happy Hour"] },
+  { id: "happy-hour-espresso-cola", cat: "happy-hour", nume: "Espresso + Coca-Cola/Fanta/Sprite", cantitate: "80ml + Doză", descriere: "Pachet Happy Hour, 08:00–12:00, pentru membri ai programului de fidelizare, elevi/studenți (16+), pensionari și angajați din saloane de înfrumusețare.", kcal: 51, proteine: 0.5, carbohidrati: 11.4, grasimi: 0.2, pret: 24, pretRedus: 12, hue: 205, etichete: ["Happy Hour"] },
+  { id: "happy-hour-espresso-hell", cat: "happy-hour", nume: "Espresso + Energizant Hell", cantitate: "80ml + 250ml", descriere: "Pachet Happy Hour, 08:00–12:00, pentru membri ai programului de fidelizare, elevi/studenți (16+), pensionari și angajați din saloane de înfrumusețare. Doar persoanelor peste 18 ani.", kcal: 54, proteine: 0.5, carbohidrati: 11.8, grasimi: 0.2, pret: 24, pretRedus: 10, hue: 210, varsta18: true, etichete: ["Happy Hour", "18+"] },
+  { id: "happy-hour-espresso-limonada", cat: "happy-hour", nume: "Espresso + Limonadă Naturală", cantitate: "80ml + 500ml", descriere: "Pachet Happy Hour, 08:00–12:00, pentru membri ai programului de fidelizare, elevi/studenți (16+), pensionari și angajați din saloane de înfrumusețare.", kcal: 47, proteine: 0.6, carbohidrati: 10.3, grasimi: 0.2, pret: 35, pretRedus: 15, hue: 215, etichete: ["Happy Hour"] },
+  { id: "happy-hour-cappuccino-apa", cat: "happy-hour", nume: "Cappuccino + Apă Plată/Minerală", cantitate: "240ml + 500ml", descriere: "Pachet Happy Hour, 08:00–12:00, pentru membri ai programului de fidelizare, elevi/studenți (16+), pensionari și angajați din saloane de înfrumusețare.", kcal: 40, proteine: 2.1, carbohidrati: 3.6, grasimi: 2.1, pret: 24, pretRedus: 11, hue: 220, etichete: ["Happy Hour"] },
+  { id: "happy-hour-cappuccino-cola", cat: "happy-hour", nume: "Cappuccino + Coca-Cola/Fanta/Sprite", cantitate: "240ml + Doză", descriere: "Pachet Happy Hour, 08:00–12:00, pentru membri ai programului de fidelizare, elevi/studenți (16+), pensionari și angajați din saloane de înfrumusețare.", kcal: 82, proteine: 2.1, carbohidrati: 14.2, grasimi: 2.1, pret: 28, pretRedus: 14, hue: 225, etichete: ["Happy Hour"] },
+  { id: "happy-hour-cappuccino-hell", cat: "happy-hour", nume: "Cappuccino + Energizant Hell", cantitate: "240ml + 250ml", descriere: "Pachet Happy Hour, 08:00–12:00, pentru membri ai programului de fidelizare, elevi/studenți (16+), pensionari și angajați din saloane de înfrumusețare. Doar persoanelor peste 18 ani.", kcal: 85, proteine: 2.1, carbohidrati: 14.6, grasimi: 2.1, pret: 28, pretRedus: 12, hue: 230, varsta18: true, etichete: ["Happy Hour", "18+"] },
+  { id: "happy-hour-cappuccino-limonada", cat: "happy-hour", nume: "Cappuccino + Limonadă Naturală", cantitate: "240ml + 500ml", descriere: "Pachet Happy Hour, 08:00–12:00, pentru membri ai programului de fidelizare, elevi/studenți (16+), pensionari și angajați din saloane de înfrumusețare.", kcal: 78, proteine: 2.2, carbohidrati: 13.1, grasimi: 2.1, pret: 39, pretRedus: 17, hue: 235, etichete: ["Happy Hour"] },
   { id: "cafea-ceai-espresso-scurt", cat: "cafea-ceai", nume: "Espresso Scurt", cantitate: "80ml", descriere: "Un shot scurt și concentrat, extras din boabe proaspăt măcinate, cu o cremă groasă deasupra.", kcal: 9, proteine: 0.5, carbohidrati: 0.8, grasimi: 0.2, pret: 10, pretRedus: 5, hue: 18, etichete: [] },
   { id: "cafea-ceai-espresso-lung", cat: "cafea-ceai", nume: "Espresso Lung", cantitate: "180ml", descriere: "Aceeași extracție, cu mai multă apă — mai lung la gust, mai ușor de băut pe îndelete.", kcal: 6, proteine: 0.4, carbohidrati: 0.6, grasimi: 0.1, pret: 10, pretRedus: 5, hue: 25, etichete: [] },
   { id: "cafea-ceai-espresso-macchiatto", cat: "cafea-ceai", nume: "Espresso Macchiatto", cantitate: "90ml", descriere: "Espresso „pătat” cu puțină spumă de lapte, exact cât să-i rotunjească asprimea.", kcal: 15, proteine: 0.9, carbohidrati: 1.2, grasimi: 0.6, pret: 12, pretRedus: 6, hue: 32, etichete: [] },
@@ -2037,7 +2043,7 @@ let PRODUSE = [
 
 /* ---------- Documente legale ---------- */
   const TERMENI = [
-    ["1. Cine suntem (operatorul)", "Site-ul, comanda online, livrarea și rezervările sunt operate de MELANIA &amp; AYAN SNACK S.R.L. („La Melania &amp; Ayan”, „noi”). Datele complete de identificare — denumire, CUI, număr de înregistrare la Registrul Comerțului, sediu, e-mail și telefon — sunt afișate în blocul de contact din subsolul site-ului. Pentru orice sesizare, ne scrii la adresa de e-mail de acolo sau ne suni. Ne place să vorbim direct."],
+    ["1. Cine suntem (operatorul)", "Site-ul, comanda online, livrarea și rezervările sunt operate de MELANIA &amp; AYAN SNACK S.R.L. („La Melania &amp; Ayan”, „noi”). Datele de identificare — denumire, sediu, e-mail și telefon — sunt afișate în blocul de contact din subsolul site-ului. Pentru orice sesizare, ne scrii la adresa de e-mail de acolo sau ne suni. Ne place să vorbim direct."],
     ["2. Obiectul", "Acești termeni reglementează folosirea site-ului, plasarea comenzilor de băuturi și gustări pentru livrare sau ridicare, precum și rezervările de masă. Prin plasarea unei comenzi, confirmi că ai citit și accepți aceste condiții. Dacă ceva nu îți este clar, întreabă-ne înainte să comanzi — e mai simplu așa."],
     ["3. Comenzi și prețuri", "Prețurile sunt afișate în lei și includ TVA. Fiecare produs își arată caloriile și macronutrienții — face parte din felul în care lucrăm. Comanda devine fermă în momentul în care primești confirmarea din partea noastră. Putem refuza sau anula o comandă dacă un produs s-a epuizat, dacă un preț a fost afișat vădit greșit sau dacă nu putem livra la adresa dată; în aceste cazuri te anunțăm și îți returnăm integral orice sumă plătită."],
     ["4. Livrare și ridicare", "Livrăm în zonele și în intervalul orar afișate la finalizarea comenzii. Costul livrării, dacă există, apare pe bon înainte de plată — nicio surpriză la ultima linie. Pentru ridicare, îți spunem ora la care comanda e gata la tejghea. Timpii sunt estimativi și pot varia în funcție de trafic și de numărul de comenzi; pregătim comanda la tejghea, așa că uneori mai durează un minut în plus."],
